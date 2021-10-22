@@ -13,7 +13,165 @@
 
 <body>
     <a class="skipToMain"><Button>Skip to main content</Button></a>
-    <header></header>
+    <header>
+        <div>
+            <h1>DELICIOUS</h1>
+            <div>
+                <nav>
+                    <i class="fas fa-caret-square-down"
+                        aria-label="This is a button which can let open the navigation dropdown menu."></i>
+                    <ul>
+                        <li><a href="./index.html"
+                                aria-label="This is a button which can let you jump to our home page.">HOME</a></li>
+                        <li><a href="#about"
+                                aria-label="This is a button which can let you jump to our about section.">ABOUT</a>
+                        </li>
+                        <li><a href="./underConstruction.html"
+                                aria-label="This is a button which can let you jump to our recipes section.">RECIPES</a>
+                        </li>
+                        <li><a href="./underConstruction.html"
+                                aria-label="This is a button which can let you jump to our nutrition section.">NUTRITION</a>
+                        </li>
+                        <li><a href="./blog.html"
+                                aria-label="This is a button which can let you jump to our blog page.">BLOG</a></li>
+                        <li><a href="./underConstruction.html" aria-label="This is a button which can let you jump to our shop page.">SHOP</a>
+                        </li>
+                        <li><a href="./contact.html"
+                                aria-label="This is a button which can let you jump to our contact page.">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <i class="fas fa-shopping-bag"
+                        aria-label="This is a button which can let open your shopping bag."></i>
+                    <p>2</p>
+                    <div>
+                        <div>
+                            <img src="./images/home-6.jpeg" alt="You already put a chicken hamburger into your bag.">
+                            <p>Chicken Hamburger <span>x</span> 1</p>
+                        </div>
+                        <div>
+                            <img src="./images/home-3.jpeg" alt="You already put a beef wrap into your bag.">
+                            <p>Beef Wrap <span>x</span> 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-search" aria-label="This is a button which can let open the search bar."></i>
+                    <form>
+                        <p>Search your favorite taste here!</p>
+                        <input type="search" id="searchInputValue" name="searchInputValue">
+                        <a href="./underConstruction.html"><botton type="submit" aria-label="This is a button to let you submmit the keywords you want to search."><i class="fab fa-searchengin" aria-hidden="true"></i></botton></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <secion>
+            <div>
+                <h2>DROP US A LINE</h2>
+                <form action="#" method="POST" name="messageSending">
+                    <div>
+                        <label class="sr-only" for="nameMessageSending">Enter your name</label>
+                        <input type="text" id="nameMessageSending" placeholder="Your Name">
+
+                        <label class="sr-only" for="emailMessageSending">Enter your email</label>
+                        <input type="email" id="emailMessageSending" placeholder="Your Email">
+                    </div>
+
+                    <label class="sr-only" for="subjuctlMessageSending">Enter your subject</label>
+                    <input type="text" id="subjuctlMessageSending" placeholder="Subject">
+
+                    <label class="sr-only" for="textareaMessageSending">Enter your message</label>
+                    <textarea id="textareaMessageSending" placeholder="Message"></textarea>
+
+                    <button type="submit">SEND MESSAGE<i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <aside>
+                <div>
+                    <h2>CONTACT DETAILS</h2>
+                    <p>Beetroot water spinack okra water chetnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bus tomato kale.</p>
+                </div>
+                <div>
+                    <h2>WORKING HOURS</h2>
+                    <p><span>MON - FRI:</span> 08:00am - 05:30pm</p>
+                    <p>Not working on Saturday and Sunday!</p>
+                </div>
+                <div>
+                    <h2>CONTACT INFO</h2>
+                    <p>A delicious restuarant</p>
+                    <p>Toronto, Ontario</p>
+                    <p>yum@food.com</p>
+                    <p>+1 234 567 8910</p>
+                </div>
+            </aside>
+        </secion>
+        <section>
+            <!-- Background picture for decoration(dragon fruit) -->
+        </section>
+        <section>
+            <div>
+                <div>
+                    <h4>DELICIOUS</h4>
+                    <div>
+                        <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce
+                            brussels sprout cabbage.</p>
+                    </div>
+                    <div>
+                        <p>A delicious restuarant</p>
+                        <p>Toronto, Ontario</p>
+                    </div>
+                    <div>
+                        <p>yum@food.com</p>
+                    </div>
+                    <div>
+                        <p>+1 234 567 8910</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>RECENT POSTS</h5>
+                    <div>
+                        <p>Beetroot water spinach okra water</p>
+                    </div>
+                    <div>
+                        <p>Chestnut ricebean pea catsear courgette</p>
+                    </div>
+                    <div>
+                        <p>Summer purslane spinach arugula pea</p>
+                    </div>
+                    <div>
+                        <p>Tatsoi aubergine spring onion bush</p>
+                    </div>
+                    <div>
+                        <p>Tomato kale radicchio turnip chicory</p>
+                    </div>
+                    <div>
+                        <p>Salsify pea sprouts fava bean</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>SUBSCRIBE NOW</h5>
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+                    <form action="#" method="POST" name="emailSubsription">
+                        <label class="sr-only" for="emailSubsriptionTextarea">Enter your email</label>
+                        <input type="email" id="emailSubsriptionTextarea" placeholder="Enter your email">
+                        <button type="submit" aria-label="This is the submitting button for email subscription."><i
+                                class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></button>
+                    </form>
+                    <div>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" aria-label="This is a link let you visit our facebook."></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter" aria-label="This is a link let you visit our twitter."></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram" aria-label="This is a link let you visit our instagram."></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
