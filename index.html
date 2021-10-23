@@ -8,15 +8,19 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Document</title>
+    <!-- Goole Font: Lora & Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS HomepageStylesheet -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Delicious Home</title>
 </head>
 
 <body>
-    <a class="skipToMain" href="#about"><Button type="submit">Skip to main content</Button></a>
+    <a class="skip-link" href="#about"><Button type="submit">Skip to main content</Button></a>
     <header>
-        <div>
+        <div class="flex flexRow flexBetween wrapper">
             <h1>DELICIOUS</h1>
-            <div>
+            <div class="flex flexRow flexEvenly headerToolBar">
                 <nav>
                     <i class="fas fa-caret-square-down"
                         aria-label="This is a button which can let open the navigation dropdown menu."></i>
@@ -42,31 +46,35 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
+                <div class="shoppingBag">
                     <i class="fas fa-shopping-bag"
                         aria-label="This is a button which can let open your shopping bag."></i>
                     <p>2</p>
-                    <div>
-                        <div>
+                    <div class="shoppingBagCart">
+                        <div class="flex flexRow flexBetween">
                             <img src="./images/home-6.jpeg" alt="You already put a chicken hamburger into your bag.">
                             <p>Chicken Hamburger <span>x</span> 1</p>
                         </div>
-                        <div>
+                        <div class="flex flexRow flexBetween">
                             <img src="./images/home-3.jpeg" alt="You already put a beef wrap into your bag.">
                             <p>Beef Wrap <span>x</span> 1</p>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="searchBar">
                     <i class="fas fa-search" aria-label="This is a button which can let open the search bar."></i>
                     <form>
                         <legend>Search your favorite taste here!</legend>
-                        <input type="search" id="searchInputValue" name="searchInputValue">
-                        <a href="./underConstruction.html">
-                            <botton type="submit"
-                                aria-label="This is a button to let you submmit the keywords you want to search."><i
-                                    class="fab fa-searchengin" aria-hidden="true"></i></botton>
-                        </a>
+                        <div class="flex flexRow flexBetween">
+                            <input type="search" id="searchInputValue" name="searchInputValue"
+                                placeholder="Kung Pao Chicken">
+
+                            <button type="submit"
+                                aria-label="This is a button to let you submmit the keywords you want to search."><a
+                                    href="./underConstruction.html"><i class="fab fa-searchengin"
+                                        aria-hidden="true"></i></a></button>
+
+                        </div>
                     </form>
                 </div>
             </div>
@@ -75,8 +83,6 @@
     <main>
         <section id="about">
             <div>
-                <img src="./images/home-2.jpeg"
-                    alt="A blue bowl with white star decorations purple stem green leave vegetable.">
                 <div>
                     <h2>MOST POPULAR RECIPES</h2>
                     <div class="greenUnderline"></div>
@@ -86,10 +92,10 @@
                         chicory celtuce parsely jicama salsify.</p>
                     <a href="./underConstruction.html"><button type="submit">VIEW RECIPES</button></a>
                 </div>
+                <img src="./images/home-2.jpeg"
+                    alt="A blue bowl with white star decorations purple stem green leave vegetable.">
             </div>
             <div>
-                <img src="./images/home-3.jpeg"
-                    alt="A wrap with medium well beef and vegatable an two pieces of lemon beside it.">
                 <div>
                     <div>
                         <i class="fas fa-lemon" aria-hidden="true"></i>
@@ -140,6 +146,8 @@
                         </div>
                     </div>
                 </div>
+                <img src="./images/home-3.jpeg"
+                    alt="A wrap with medium well beef and vegatable an two pieces of lemon beside it.">
             </div>
         </section>
         <section>

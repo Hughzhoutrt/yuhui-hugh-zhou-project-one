@@ -1,0 +1,177 @@
+//Temperory display:none 
+.temperoryNone{
+    display:none;
+}
+
+header {
+    background-image: url(../images/home-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+
+    .wrapper{
+        margin: 0 5%;
+        padding: 2% 0;
+        .headerToolBar {
+            width: 40%;
+        }
+    }
+}
+// Nav START
+nav {
+    position:relative;
+
+    &:hover ul {
+        display:block;
+    }
+
+    ul {
+        background-color: $colorGreenLight;
+        border-bottom-left-radius: 20px;
+        display: none;
+        padding: 40% 0;
+        position:absolute;
+        width: 600%;
+
+        top:10%;
+        left:-10%;
+
+        li {
+            line-height: 1.5;
+            list-style: none;
+            padding: 0 10%;
+        }
+    }
+}
+
+nav li {
+    a {
+        color: $colorBlack;
+        font-family: $fontRaleway;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:focus-within {
+        background-color: $colorBrownGrey;
+        
+        a {
+            color: $colorWhite;
+            }
+        
+        &::before {
+            color: $colorWhite;
+            content: '»';
+        }
+    }
+}
+// Nav END and Shopping START
+.shoppingBag {
+    position:relative;
+
+    > p {
+        background-color: $colorGreenDark;
+        border-radius: 50%;
+        color: $colorWhite;
+        font-size: 0.5rem;
+        padding: 0 3px;
+        position:absolute;
+        text-align: center;
+
+        top: 20%;
+        left:60%;
+    }
+
+    &:hover .shoppingBagCart {
+        display:block;
+    }
+
+    .shoppingBagCart {
+        background-color: $colorGreenLight;
+        border-bottom-left-radius: 20px;
+        display: none;
+        padding: 50% 0;
+        position:absolute;
+        width: 1400%;
+
+        top:60%;
+        left:-1000%;
+
+        div {
+            padding: 1% 3%;
+
+            &:hover,
+            &:focus-within {
+                background-color: $colorBrownGrey;
+
+                img {
+                    border-color: $colorWhite;
+                }
+
+                p {
+                    color: $colorWhite;
+                }
+            }
+        } 
+    }
+}
+
+.shoppingBagCart {
+    img {
+        border-style: double;
+        border-radius: 5px;
+        margin-bottom: 10%;
+        width: 40%;
+    }
+
+    p {
+        align-self: flex-end;
+        font-size: 0.8rem;
+        text-decoration: none;
+
+        span {
+            font-size: 0.6rem;
+        }
+    }
+}
+// Shopping END and Searching START
+.searchBar {
+    position:relative;
+
+    &:hover form {
+        display:block;
+    }
+
+    form {
+        background-color: $colorGreenLight;
+        border-bottom-left-radius: 20px;
+        display: none;
+        font-size: 0.8rem;
+        padding: 50% 50%;
+        position:absolute;
+        width: 1100%;
+
+        top:60%;
+        left:-900%;
+
+        legend {
+            font-family: $fontRaleway;
+            margin: 3% 0;
+        }
+
+        input[type=search] {
+            font-family:  $fontLora;
+            font-style: italic;
+            text-align: center;
+        }
+
+        button {
+            background-color: inherit;
+            border:none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+    }
+}
+
