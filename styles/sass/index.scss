@@ -78,3 +78,52 @@ header {
         }
     }
 }
+//Restuarant information section End and Restuarant gallery section START
+#restuarantGallery {
+    margin: 5vh auto;
+    position:relative;
+
+    ul {
+        padding-left: 0;
+
+        a{
+            margin: 0 3vw;
+            text-decoration: none;
+
+            li {
+                color: $colorBlackTwo;
+                list-style: none;
+                text-align: center;
+
+                p{
+                    color: $colorBlackTwo;
+                    font-size: 0.5rem;
+                    margin-top: 0;
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+
+    div {
+        & img:nth-of-type(1) {
+            display: block;
+            width: 100%;
+        }
+
+        & img:nth-of-type(1) ~ img {
+            display:none;
+            position:absolute;
+            width: 100%;
+        
+            top:0;
+            left:0;
+        
+            &:target {
+                display: block;
+                z-index: 1;
+            }
+        }
+    }  
+}
