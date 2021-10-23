@@ -20,5 +20,35 @@ body {
 
 // Font sizes
 h1 {
+  color: $colorBlack;
+  font-family: $fontRaleway;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: $colorBlack;
+  font-family: $fontRaleway;
   font-size: 1rem;
+}
+
+h3 {
+  color: $colorBlack;
+  font-family: $fontRaleway;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+p {
+  color: $colorBrownGrey;
+  font-family:  $fontLora;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+//Components
+.greenUnderline { //A green line under title
+  align-self: center;
+  border-bottom: 0.5vh solid $colorGreenDark;
+  margin-bottom: 3vh;
+  width: 15%;
 }

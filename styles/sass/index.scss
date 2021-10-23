@@ -8,3 +8,46 @@
 @import "contactInfo";
 @import "footer";
 
+//Header START
+header {
+    background-image: url(../images/home-1.jpeg);
+}
+//Header End and About section START
+#about {
+    margin: 5vh 0;
+
+    .flex.flexCenter { //First article part in About section
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    button {
+        background-color: $colorGreenDark;
+        border-style: none;
+        color: $colorWhite;
+        font-family:  $fontRaleway;
+        font-size: 0.9rem;
+        margin: 3vh 0 10vh;
+        padding: 4% 10%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .flex.flexWrap {
+        margin: 10vh auto 7vh;
+        width: 90%;
+
+        i {
+            font-size: 1rem;
+            margin-right: 3vw;
+        }
+
+        div {
+            margin-bottom: 3vh;
+        }
+    }
+}
+

@@ -4,7 +4,6 @@
 }
 
 header {
-    background-image: url(../images/home-1.jpeg);
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -28,6 +27,7 @@ nav {
     ul {
         background-color: $colorGreenLight;
         border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
         display: none;
         padding: 40% 0;
         position:absolute;
@@ -75,7 +75,7 @@ nav li {
         border-radius: 50%;
         color: $colorWhite;
         font-size: 0.5rem;
-        padding: 0 3px;
+        padding: 0 4px;
         position:absolute;
         text-align: center;
 
@@ -90,6 +90,7 @@ nav li {
     .shoppingBagCart {
         background-color: $colorGreenLight;
         border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
         display: none;
         padding: 50% 0;
         position:absolute;
@@ -146,6 +147,7 @@ nav li {
     form {
         background-color: $colorGreenLight;
         border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
         display: none;
         font-size: 0.8rem;
         padding: 50% 50%;

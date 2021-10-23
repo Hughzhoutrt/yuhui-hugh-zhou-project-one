@@ -268,6 +268,17 @@ html {
           justify-content: space-evenly;
 }
 
+.flexCenter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flexWrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 body {
   margin: 0 auto;
   /*16px*125%=20px*/
@@ -288,7 +299,38 @@ body {
 }
 
 h1 {
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
+}
+
+h3 {
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+p {
+  color: #999;
+  font-family: "Lora", serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.greenUnderline {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-bottom: 0.5vh solid #64A604;
+  margin-bottom: 3vh;
+  width: 15%;
 }
 
 .temperoryNone {
@@ -296,7 +338,6 @@ h1 {
 }
 
 header {
-  background-image: url(../images/home-1.jpeg);
   background-position: center;
   background-size: cover;
   height: 30vh;
@@ -322,6 +363,7 @@ nav:hover ul {
 nav ul {
   background-color: #DDED9A;
   border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
   display: none;
   padding: 40% 0;
   position: absolute;
@@ -365,7 +407,7 @@ nav li:hover::before, nav li:focus-within::before {
   border-radius: 50%;
   color: #F6F6F6;
   font-size: 0.5rem;
-  padding: 0 3px;
+  padding: 0 4px;
   position: absolute;
   text-align: center;
   top: 20%;
@@ -379,6 +421,7 @@ nav li:hover::before, nav li:focus-within::before {
 .shoppingBag .shoppingBagCart {
   background-color: #DDED9A;
   border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
   display: none;
   padding: 50% 0;
   position: absolute;
@@ -432,6 +475,7 @@ nav li:hover::before, nav li:focus-within::before {
 .searchBar form {
   background-color: #DDED9A;
   border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
   display: none;
   font-size: 0.8rem;
   padding: 50% 50%;
