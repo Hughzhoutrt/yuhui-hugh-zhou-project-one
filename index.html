@@ -11,7 +11,7 @@
     <!-- Goole Font: Lora & Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <!-- CSS HomepageStylesheet -->
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Delicious Home</title>
 </head>
 
@@ -81,7 +81,7 @@
         </div>
     </header>
     <main>
-        <section id="about">
+        <section id="about" class="mainSection">
             <div>
                 <div class="flex flexColumn flexCenter">
                     <h2>MOST POPULAR RECIPES</h2>
@@ -150,7 +150,7 @@
                     alt="A wrap with medium well beef and vegatable an two pieces of lemon beside it.">
             </div>
         </section>
-        <section id="restuarantInfo">
+        <section  class="restuarantSection">
             <div class="flex flexColumn flexCenter">
                 <img src="images/home-4.jpeg"
                     alt="The restuarant environment, orange tables and chairs, dark gray lower half wall and barrier and light gray higher half wall.">
@@ -161,7 +161,7 @@
                     collard dandelion okra wakame tomato. Dandeloin cucumber earthnut pea peanut soko zucchini.</P>
             </div>
         </section>
-        <section id="restuarantGallery">
+        <section class="gallerySection">
             <div class="galleryContent">
                 <img id="galleryPic1" src="./images/home-5.jpeg"
                     alt="A vegetable soup with tomato, peanut, broccoli and pomegranate.">
@@ -188,7 +188,7 @@
                     aria-label="This button can let you visit the sixth picture in the gallery section."><li><i class="fas fa-image" aria-hidden="true"></i><p>Creamy Soup</p></li></a>
             </ul>
         </section>
-        <section id="clientFeedback">
+        <section class="feedbackSection backgroundGreenLight">
             <div class="flex flexColumn flexCenter">
                 <h2>HUNGRY CLIENTS</h2>
                 <div class="greenUnderline"></div>
@@ -205,9 +205,9 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <div>
+        <section class="informationSection backgroundBlakeTwo">
+            <div class="flex flexColumn flexEvenly">
+                <div class="flex flexColumn informationDetails">
                     <h4>DELICIOUS</h4>
                     <div>
                         <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce
@@ -224,7 +224,7 @@
                         <p>+1 234 567 8910</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flexColumn informationDetails">
                     <h5>RECENT POSTS</h5>
                     <div>
                         <p>Beetroot water spinach okra water</p>
@@ -245,12 +245,12 @@
                         <p>Salsify pea sprouts fava bean</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flexColumn subscription">
                     <h5>SUBSCRIBE NOW</h5>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
                     <form action="#" method="POST" name="subscriptionSending">
                         <label class="sr-only" for="emailSubsriptionSending">Enter your email</label>
-                        <input type="email" id="emailSubsription" placeholder="Enter your email">
+                        <input type="email" id="emailSubsription" placeholder="Enter your email" class="backgroundGrey">
 
                         <button type="submit" aria-label="This is the submitting button for email subscription."><i
                                 class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></button>

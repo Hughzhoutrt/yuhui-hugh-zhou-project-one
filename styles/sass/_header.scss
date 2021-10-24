@@ -1,8 +1,10 @@
-//Temperory display:none 
-.temperoryNone{
-    display:none;
+//Skip to main button setting START
+.skip-link {
+    color: $colorBlack;
+    font-family: $fontRaleway;
+    font-size: 0.6rem;
 }
-
+//Skip to main button setting END and Header START
 header {
     background-position: center;
     background-size: cover;
@@ -16,7 +18,7 @@ header {
         }
     }
 }
-// Nav START
+// Header END and Nav START
 nav {
     position:relative;
 

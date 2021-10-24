@@ -298,23 +298,34 @@ body {
   left: 0;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   color: #2E2E2E;
   font-family: "Raleway", sans-serif;
+}
+
+h1 {
   font-size: 1.2rem;
 }
 
 h2 {
-  color: #2E2E2E;
-  font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
 
 h3 {
-  color: #2E2E2E;
-  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   margin-top: 0;
+}
+
+h4 {
+  color: #64A604;
+  font-size: 1rem;
+  margin-bottom: 2vh;
+}
+
+h5 {
+  color: #F6F6F6;
+  font-size: 0.8rem;
+  margin-bottom: 2vh;
 }
 
 p {
@@ -333,8 +344,22 @@ p {
   width: 15%;
 }
 
-.temperoryNone {
-  display: none;
+.backgroundGreenLight {
+  background-color: #DDED9A;
+}
+
+.backgroundBlakeTwo {
+  background-color: #333;
+}
+
+.backgroundGrey {
+  background-color: #999;
+}
+
+.skip-link {
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
 }
 
 header {
@@ -503,21 +528,41 @@ nav li:hover::before, nav li:focus-within::before {
   font-size: 1.2rem;
 }
 
+.informationSection .flex.flexEvenly {
+  margin: 0 auto 5vh;
+  padding-top: 5vh;
+  width: 80%;
+}
+
+.informationSection .flex.flexEvenly .informationDetails div {
+  border-bottom: 1px solid #999;
+}
+
+.informationSection .flex.flexEvenly .informationDetails div:last-of-type {
+  border: none;
+  margin-bottom: 5vh;
+}
+
+.informationSection .flex.flexEvenly .subscription form {
+  border-bottom: 1px solid #999;
+  padding: 3vh 0;
+}
+
 header {
   background-image: url(../images/home-1.jpeg);
 }
 
-#about {
+.mainSection {
   margin: 5vh 0;
 }
 
-#about .flex.flexCenter {
+.mainSection .flex.flexCenter {
   margin: 0 auto;
   text-align: center;
   width: 90%;
 }
 
-#about button {
+.mainSection button {
   background-color: #64A604;
   border-style: none;
   color: #F6F6F6;
@@ -527,39 +572,39 @@ header {
   padding: 4% 10%;
 }
 
-#about img {
+.mainSection img {
   width: 100%;
 }
 
-#about .flex.flexWrap {
+.mainSection .flex.flexWrap {
   margin: 10vh auto 7vh;
   width: 90%;
 }
 
-#about .flex.flexWrap i {
+.mainSection .flex.flexWrap i {
   font-size: 1rem;
   margin-right: 3vw;
 }
 
-#about .flex.flexWrap div {
+.mainSection .flex.flexWrap div {
   margin-bottom: 3vh;
 }
 
-#restuarantInfo {
+.restuarantSection {
   margin: 5vh auto;
   width: 90%;
 }
 
-#restuarantInfo .flex.flexCenter {
+.restuarantSection .flex.flexCenter {
   position: relative;
 }
 
-#restuarantInfo .flex.flexCenter img {
+.restuarantSection .flex.flexCenter img {
   margin: 15vh auto 0;
   width: 70%;
 }
 
-#restuarantInfo .flex.flexCenter img:nth-of-type(2) {
+.restuarantSection .flex.flexCenter img:nth-of-type(2) {
   margin: 0;
   position: absolute;
   width: 30%;
@@ -567,17 +612,17 @@ header {
   left: 65%;
 }
 
-#restuarantInfo .flex.flexCenter h2,
-#restuarantInfo .flex.flexCenter p {
+.restuarantSection .flex.flexCenter h2,
+.restuarantSection .flex.flexCenter p {
   text-align: center;
 }
 
-#restuarantGallery {
+.gallerySection {
   margin: 5vh auto;
   position: relative;
 }
 
-#restuarantGallery .galleryBar {
+.gallerySection .galleryBar {
   padding-left: 0;
 }
 
@@ -618,46 +663,45 @@ header {
   z-index: 1;
 }
 
-#clientFeedback {
-  background-color: #DDED9A;
-  margin: 5vh auto;
+.feedbackSection {
+  margin: 5vh auto 0;
   padding: 5vh 0;
 }
 
-#clientFeedback .flex.flexCenter {
+.feedbackSection .flex.flexCenter {
   margin: 0 auto;
   text-align: center;
   width: 70%;
 }
 
-.flex.flexColumn {
+.feedbackSection .flex.flexColumn {
   color: #EEF6D1;
   font-size: 0.8rem;
   position: relative;
 }
 
-.flex.flexColumn .quoteLeft {
+.feedbackSection .flex.flexColumn .quoteLeft {
   position: absolute;
   top: 5%;
   left: -5%;
 }
 
-.flex.flexColumn .quoteRight {
+.feedbackSection .flex.flexColumn .quoteRight {
   position: absolute;
   top: 90%;
   left: 95%;
 }
 
-.flex.flexBetween {
+.feedbackSection .flex.flexBetween {
   font-size: 0.8rem;
   margin: 0 auto;
   width: 10%;
 }
 
-.flex.flexBetween .angleLeft {
+.feedbackSection .flex.flexBetween .angleLeft {
   color: #EEF6D1;
 }
 
-.flex.flexBetween .angleRight {
+.feedbackSection .flex.flexBetween .angleRight {
   color: #F6F6F6;
 }

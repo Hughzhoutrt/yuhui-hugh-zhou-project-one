@@ -6,6 +6,9 @@
 @import "navigation";
 @import "contactInfo";
 @import "footer";
+@import "blog";
+@import "contact";
+@import "underConstruction";
 
 //HOME PAGE START
 //Header START
@@ -13,7 +16,7 @@ header {
     background-image: url(../images/home-1.jpeg);
 }
 //Header End and About section START
-#about {
+.mainSection {
     margin: 5vh 0;
 
     .flex.flexCenter { //First article part in About section
@@ -51,7 +54,7 @@ header {
     }
 }
 //About section End and Restuarant information section START
-#restuarantInfo {
+.restuarantSection {
     margin: 5vh auto;
     width: 90%;
 
@@ -79,7 +82,7 @@ header {
     }
 }
 //Restuarant information section End and Restuarant gallery section START
-#restuarantGallery {
+.gallerySection {
     margin: 5vh auto;
     position:relative;
 
@@ -128,9 +131,8 @@ header {
     }
 }  
 //Restuarant gallery section End and Client feedback section START
-#clientFeedback {
-    background-color:  $colorGreenLight;
-    margin: 5vh auto;
+.feedbackSection {
+    margin: 5vh auto 0;
     padding: 5vh 0;
 
     .flex.flexCenter {
@@ -140,7 +142,7 @@ header {
     }
 }
 
-.flex.flexColumn {
+.feedbackSection .flex.flexColumn {
     color: $colorGreenLightPlus;
     font-size: 0.8rem;
     position: relative;
@@ -160,7 +162,7 @@ header {
     }
 }
 
-.flex.flexBetween {
+.feedbackSection .flex.flexBetween {
     font-size: 0.8rem;
     margin:0 auto;
     width: 10%;
@@ -173,5 +175,5 @@ header {
         color: $colorWhite;
     }
 }
-
+//Client feedback section END
 //HOME PAGE END
