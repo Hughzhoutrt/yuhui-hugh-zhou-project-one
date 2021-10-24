@@ -577,34 +577,35 @@ header {
   position: relative;
 }
 
-#restuarantGallery ul {
+#restuarantGallery .galleryBar {
   padding-left: 0;
 }
 
-#restuarantGallery ul a {
+.galleryBar a {
   margin: 0 3vw;
   text-decoration: none;
+  width: 16.67%;
 }
 
-#restuarantGallery ul a li {
+.galleryBar a li {
   color: #333;
   list-style: none;
   text-align: center;
 }
 
-#restuarantGallery ul a li p {
+.galleryBar a li p {
   color: #333;
   font-size: 0.5rem;
   margin-top: 0;
   text-align: center;
 }
 
-#restuarantGallery div img:nth-of-type(1) {
+.galleryContent img:nth-of-type(1) {
   display: block;
   width: 100%;
 }
 
-#restuarantGallery div img:nth-of-type(1) ~ img {
+.galleryContent img:nth-of-type(1) ~ img {
   display: none;
   position: absolute;
   width: 100%;
@@ -612,7 +613,7 @@ header {
   left: 0;
 }
 
-#restuarantGallery div img:nth-of-type(1) ~ img:target {
+.galleryContent img:nth-of-type(1) ~ img:target {
   display: block;
   z-index: 1;
 }
@@ -629,30 +630,34 @@ header {
   width: 70%;
 }
 
-#clientFeedback .flex.flexCenter div {
+.flex.flexColumn {
   color: #EEF6D1;
   font-size: 0.8rem;
   position: relative;
 }
 
-#clientFeedback .flex.flexCenter div .quoteLeft {
+.flex.flexColumn .quoteLeft {
   position: absolute;
   top: 5%;
   left: -5%;
 }
 
-#clientFeedback .flex.flexCenter div .quoteRight {
+.flex.flexColumn .quoteRight {
   position: absolute;
   top: 90%;
   left: 95%;
 }
 
-#clientFeedback .flex.flexCenter .flex.flexBetween {
+.flex.flexBetween {
   font-size: 0.8rem;
   margin: 0 auto;
   width: 10%;
 }
 
-#clientFeedback .flex.flexCenter .flex.flexBetween .angleRight {
+.flex.flexBetween .angleLeft {
+  color: #EEF6D1;
+}
+
+.flex.flexBetween .angleRight {
   color: #F6F6F6;
 }

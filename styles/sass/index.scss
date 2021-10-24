@@ -7,6 +7,7 @@
 @import "contactInfo";
 @import "footer";
 
+//HOME PAGE START
 //Header START
 header {
     background-image: url(../images/home-1.jpeg);
@@ -82,50 +83,50 @@ header {
     margin: 5vh auto;
     position:relative;
 
-    ul {
-        padding-left: 0;
+    .galleryBar {
+        padding-left: 0; 
+    }   
+}
 
-        a{
-            margin: 0 3vw;
-            text-decoration: none;
+.galleryBar a {
+    margin: 0 3vw;
+    text-decoration: none;
+    width: 16.67%;
 
-            li {
-                color: $colorBlackTwo;
-                list-style: none;
-                text-align: center;
+    li {
+        color: $colorBlackTwo;
+        list-style: none;
+        text-align: center;
 
-                p{
-                    color: $colorBlackTwo;
-                    font-size: 0.5rem;
-                    margin-top: 0;
-                    text-align: center;
-                }
-            }
+        p{
+            color: $colorBlackTwo;
+            font-size: 0.5rem;
+            margin-top: 0;
+            text-align: center;
         }
-        
+    }
+}
+
+.galleryContent {
+    & img:nth-of-type(1) {
+        display: block;
+        width: 100%;
     }
 
-    div {
-        & img:nth-of-type(1) {
+    & img:nth-of-type(1) ~ img {
+        display:none;
+        position:absolute;
+        width: 100%;
+    
+        top:0;
+        left:0;
+    
+        &:target {
             display: block;
-            width: 100%;
+            z-index: 1;
         }
-
-        & img:nth-of-type(1) ~ img {
-            display:none;
-            position:absolute;
-            width: 100%;
-        
-            top:0;
-            left:0;
-        
-            &:target {
-                display: block;
-                z-index: 1;
-            }
-        }
-    }  
-}
+    }
+}  
 //Restuarant gallery section End and Client feedback section START
 #clientFeedback {
     background-color:  $colorGreenLight;
@@ -135,36 +136,42 @@ header {
     .flex.flexCenter {
         margin:0 auto;
         text-align: center;
-        width: 70%;
-
-        div {
-            color: $colorGreenLightPlus;
-            font-size: 0.8rem;
-            position: relative;
-
-            .quoteLeft {
-                position:absolute;
-
-                top: 5%;
-                left:-5%;
-            }
-
-            .quoteRight {
-                position:absolute;
-
-                top: 90%;
-                left:95%;
-            }
-        }
-        
-        .flex.flexBetween {
-            font-size: 0.8rem;
-            margin:0 auto;
-            width: 10%;
-
-            .angleRight {
-                color: $colorWhite;
-            }
-        }
+        width: 70%;     
     }
 }
+
+.flex.flexColumn {
+    color: $colorGreenLightPlus;
+    font-size: 0.8rem;
+    position: relative;
+
+    .quoteLeft {
+        position:absolute;
+
+        top: 5%;
+        left:-5%;
+    }
+
+    .quoteRight {
+        position:absolute;
+
+        top: 90%;
+        left:95%;
+    }
+}
+
+.flex.flexBetween {
+    font-size: 0.8rem;
+    margin:0 auto;
+    width: 10%;
+
+    .angleLeft {
+        color: $colorGreenLightPlus;
+    }
+
+    .angleRight {
+        color: $colorWhite;
+    }
+}
+
+//HOME PAGE END
