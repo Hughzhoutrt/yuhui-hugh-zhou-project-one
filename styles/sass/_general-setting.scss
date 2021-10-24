@@ -20,8 +20,8 @@ body {
 
 // Font sizes
 h1, h2, h3, h4, h5 {
-  color: $colorBlack;
-  font-family: $fontRaleway;
+  color: $color-black;
+  font-family: $font-raleway;
 }
 
 h1 {
@@ -38,41 +38,50 @@ h3 {
 }
 
 h4 {
-  color: $colorGreenDark;
+  color: $color-green-dark;
   font-size: 1rem;
   margin-bottom: 2vh;
 }
 
 h5 {
-  color: $colorWhite;
+  color: $color-white;
   font-size: 0.8rem;
   margin-bottom: 2vh;
 }
 
-p {
-  color: $colorBrownGrey;
-  font-family:  $fontLora;
+p,
+input[type=email] {
+  color: $color-brown-grey;
+  font-family:  $font-lora;
   font-size: 0.8rem;
   line-height: 1.5;
 }
 
 //Components
-.greenUnderline { //A green line under title
+.green-underline { //A green line under title
   align-self: center;
-  border-bottom: 0.5vh solid $colorGreenDark;
+  border-bottom: 0.5vh solid $color-green-dark;
   margin-bottom: 3vh;
   width: 15%;
 }
 
 //Background color 
-.backgroundGreenLight {
-  background-color: $colorGreenLight;
+.background-black {
+  background-color: $color-black;
 }
 
-.backgroundBlakeTwo {
-  background-color: $colorBlackTwo;
+.background-black-light {
+  background-color: $color-black-light;
 }
 
-.backgroundGrey {
-  background-color: $colorBrownGrey;
+.background-brown-grey-dark {
+  background-color: $color-brown-grey-dark;
+}
+
+.background-brown-grey-light {
+  background-color: $color-brown-grey-light;
+}
+
+.background-green-light {
+  background-color: $color-green-light;
 }

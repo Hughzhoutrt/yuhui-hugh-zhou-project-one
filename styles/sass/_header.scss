@@ -1,7 +1,7 @@
 //Skip to main button setting START
 .skip-link {
-    color: $colorBlack;
-    font-family: $fontRaleway;
+    color: $color-black;
+    font-family: $font-raleway;
     font-size: 0.6rem;
 }
 //Skip to main button setting END and Header START
@@ -10,10 +10,10 @@ header {
     background-size: cover;
     height: 30vh;
 
-    .wrapper{
+    .header-wrapper{
         margin: 0 5%;
         padding: 2% 0;
-        .headerToolBar {
+        .header-toolbar {
             width: 40%;
         }
     }
@@ -27,7 +27,7 @@ nav {
     }
 
     ul {
-        background-color: $colorGreenLight;
+        background-color: $color-green-light;
         border-bottom-left-radius: 20px;
         border-top-right-radius: 20px;
         display: none;
@@ -48,34 +48,34 @@ nav {
 
 nav li {
     a {
-        color: $colorBlack;
-        font-family: $fontRaleway;
+        color: $color-black;
+        font-family: $font-raleway;
         font-size: 0.8rem;
         text-decoration: none;
     }
 
     &:hover,
     &:focus-within {
-        background-color: $colorBrownGrey;
+        background-color: $color-brown-grey;
         
         a {
-            color: $colorWhite;
+            color: $color-white;
             }
         
         &::before {
-            color: $colorWhite;
+            color: $color-white;
             content: '»';
         }
     }
 }
 // Nav END and Shopping START
-.shoppingBag {
+.header-shoppingbag {
     position:relative;
-
+    
     > p {
-        background-color: $colorGreenDark;
+        background-color: $color-green-dark;
         border-radius: 50%;
-        color: $colorWhite;
+        color: $color-white;
         font-size: 0.5rem;
         padding: 0 4px;
         position:absolute;
@@ -85,12 +85,12 @@ nav li {
         left:60%;
     }
 
-    &:hover .shoppingBagCart {
+    &:hover .header-shoppingbag-cart {
         display:block;
     }
 
-    .shoppingBagCart {
-        background-color: $colorGreenLight;
+    .header-shoppingbag-cart {
+        background-color: $color-green-light;
         border-bottom-left-radius: 20px;
         border-top-right-radius: 20px;
         display: none;
@@ -106,21 +106,21 @@ nav li {
 
             &:hover,
             &:focus-within {
-                background-color: $colorBrownGrey;
+                background-color: $color-brown-grey;
 
                 img {
-                    border-color: $colorWhite;
+                    border-color: $color-white;
                 }
 
                 p {
-                    color: $colorWhite;
+                    color: $color-white;
                 }
             }
         } 
     }
 }
 
-.shoppingBagCart {
+.header-shoppingbag-cart {
     img {
         border-style: double;
         border-radius: 5px;
@@ -139,7 +139,7 @@ nav li {
     }
 }
 // Shopping END and Searching START
-.searchBar {
+.header-searchbar {
     position:relative;
 
     &:hover form {
@@ -147,7 +147,7 @@ nav li {
     }
 
     form {
-        background-color: $colorGreenLight;
+        background-color: $color-green-light;
         border-bottom-left-radius: 20px;
         border-top-right-radius: 20px;
         display: none;
@@ -160,12 +160,12 @@ nav li {
         left:-900%;
 
         legend {
-            font-family: $fontRaleway;
+            font-family: $font-raleway;
             margin: 3% 0;
         }
 
         input[type=search] {
-            font-family:  $fontLora;
+            font-family:  $font-lora;
             font-style: italic;
             text-align: center;
         }

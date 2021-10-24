@@ -1,14 +1,13 @@
 @import "normalize";
 @import "variables";
 @import "flexbox";
-@import "generalSetting";
+@import "general-setting";
 @import "header";
-@import "navigation";
-@import "contactInfo";
+@import "subscription-section";
 @import "footer";
 @import "blog";
 @import "contact";
-@import "underConstruction";
+@import "under-construction";
 
 //HOME PAGE START
 //Header START
@@ -16,32 +15,20 @@ header {
     background-image: url(../images/home-1.jpeg);
 }
 //Header End and About section START
-.mainSection {
+.home-main {
     margin: 5vh 0;
 
-    .flex.flexCenter { //First article part in About section
-        margin: 0 auto;
-        text-align: center;
-        width: 90%;
-    }
-
-    button {
-        background-color: $colorGreenDark;
-        border-style: none;
-        color: $colorWhite;
-        font-family:  $fontRaleway;
-        font-size: 0.9rem;
-        margin: 3vh 0 10vh;
-        padding: 4% 10%;
+    .main-description {
+        margin-bottom:-1vh;
     }
 
     img {
         width: 100%;
     }
 
-    .flex.flexWrap {
-        margin: 10vh auto 7vh;
-        width: 90%;
+    .flex.flex-wrap {
+        margin: 0 auto ;
+        padding: 10vh 5% 5vh 5%;
 
         i {
             font-size: 1rem;
@@ -53,12 +40,34 @@ header {
         }
     }
 }
+
+.main-description {
+    .flex.flex-center { //First article part in About section
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    button {
+        background-color: $color-green-dark;
+        border-style: none;
+        color: $color-white;
+        font-family:  $font-raleway;
+        font-size: 0.9rem;
+        margin: 3vh 0 10vh;
+        padding: 4% 10%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
 //About section End and Restuarant information section START
-.restuarantSection {
+.home-restuarant {
     margin: 5vh auto;
     width: 90%;
 
-    .flex.flexCenter{
+    .flex.flex-center{
         position:relative;
 
         img {
@@ -82,27 +91,27 @@ header {
     }
 }
 //Restuarant information section End and Restuarant gallery section START
-.gallerySection {
+.home-gallery {
     margin: 5vh auto;
     position:relative;
 
-    .galleryBar {
+    .gallery-bar {
         padding-left: 0; 
     }   
 }
 
-.galleryBar a {
+.gallery-bar a {
     margin: 0 3vw;
     text-decoration: none;
     width: 16.67%;
 
     li {
-        color: $colorBlackTwo;
+        color: $color-black-light;
         list-style: none;
         text-align: center;
 
         p{
-            color: $colorBlackTwo;
+            color: $color-black-light;
             font-size: 0.5rem;
             margin-top: 0;
             text-align: center;
@@ -110,7 +119,7 @@ header {
     }
 }
 
-.galleryContent {
+.gallery-content {
     & img:nth-of-type(1) {
         display: block;
         width: 100%;
@@ -131,30 +140,30 @@ header {
     }
 }  
 //Restuarant gallery section End and Client feedback section START
-.feedbackSection {
+.home-feedback {
     margin: 5vh auto 0;
     padding: 5vh 0;
 
-    .flex.flexCenter {
+    .flex.flex-center {
         margin:0 auto;
         text-align: center;
         width: 70%;     
     }
 }
 
-.feedbackSection .flex.flexColumn {
-    color: $colorGreenLightPlus;
+.home-feedback .flex.flex-column {
+    color: $color-green-light-plus;
     font-size: 0.8rem;
     position: relative;
 
-    .quoteLeft {
+    .fa-quote-left {
         position:absolute;
 
         top: 5%;
         left:-5%;
     }
 
-    .quoteRight {
+    .fa-quote-right {
         position:absolute;
 
         top: 90%;
@@ -162,17 +171,17 @@ header {
     }
 }
 
-.feedbackSection .flex.flexBetween {
+.home-feedback .flex.flex-between {
     font-size: 0.8rem;
     margin:0 auto;
     width: 10%;
 
-    .angleLeft {
-        color: $colorGreenLightPlus;
+    .fa-angle-left {
+        color: $color-green-light-plus;
     }
 
-    .angleRight {
-        color: $colorWhite;
+    .fa-angle-right {
+        color: $color-white;
     }
 }
 //Client feedback section END

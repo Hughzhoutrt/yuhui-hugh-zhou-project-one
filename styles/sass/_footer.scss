@@ -1,0 +1,15 @@
+.footer-wrapper {
+    color: $color-brown-grey;
+    margin: 0 auto;
+    padding: 3vh 0;
+    width: 80%;
+
+    p {
+        font-size: 0.6rem;
+        margin:0;
+
+        span {
+            color: $color-green-dark;
+        }
+    }
+}
