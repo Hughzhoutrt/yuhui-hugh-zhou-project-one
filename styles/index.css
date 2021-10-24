@@ -616,3 +616,43 @@ header {
   display: block;
   z-index: 1;
 }
+
+#clientFeedback {
+  background-color: #DDED9A;
+  margin: 5vh auto;
+  padding: 5vh 0;
+}
+
+#clientFeedback .flex.flexCenter {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+
+#clientFeedback .flex.flexCenter div {
+  color: #EEF6D1;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+#clientFeedback .flex.flexCenter div .quoteLeft {
+  position: absolute;
+  top: 5%;
+  left: -5%;
+}
+
+#clientFeedback .flex.flexCenter div .quoteRight {
+  position: absolute;
+  top: 90%;
+  left: 95%;
+}
+
+#clientFeedback .flex.flexCenter .flex.flexBetween {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  width: 10%;
+}
+
+#clientFeedback .flex.flexCenter .flex.flexBetween .angleRight {
+  color: #F6F6F6;
+}

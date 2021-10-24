@@ -2,7 +2,6 @@
 @import "variables";
 @import "flexbox";
 @import "generalSetting";
-@import "skipMainContentButton";
 @import "header";
 @import "navigation";
 @import "contactInfo";
@@ -126,4 +125,46 @@ header {
             }
         }
     }  
+}
+//Restuarant gallery section End and Client feedback section START
+#clientFeedback {
+    background-color:  $colorGreenLight;
+    margin: 5vh auto;
+    padding: 5vh 0;
+
+    .flex.flexCenter {
+        margin:0 auto;
+        text-align: center;
+        width: 70%;
+
+        div {
+            color: $colorGreenLightPlus;
+            font-size: 0.8rem;
+            position: relative;
+
+            .quoteLeft {
+                position:absolute;
+
+                top: 5%;
+                left:-5%;
+            }
+
+            .quoteRight {
+                position:absolute;
+
+                top: 90%;
+                left:95%;
+            }
+        }
+        
+        .flex.flexBetween {
+            font-size: 0.8rem;
+            margin:0 auto;
+            width: 10%;
+
+            .angleRight {
+                color: $colorWhite;
+            }
+        }
+    }
 }
