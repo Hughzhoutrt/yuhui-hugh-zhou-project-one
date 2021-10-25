@@ -17,10 +17,10 @@
 
 <body>
     <a class="skip-link"><Button>Skip to main content</Button></a>
-    <header>
-        <div>
+    <header class="blog-header">
+        <div class="flex flex-row flex-between header-wrapper">
             <h1>DELICIOUS</h1>
-            <div>
+            <div class="flex flex-row flex-evenly header-toolbar">
                 <nav>
                     <i class="fas fa-caret-square-down"
                         aria-label="This is a button which can let open the navigation dropdown menu."></i>
@@ -30,15 +30,15 @@
                         <li><a href="#about"
                                 aria-label="This is a button which can let you jump to our about section.">ABOUT</a>
                         </li>
-                        <li><a href="./underConstruction.html"
+                        <li><a href="./under-construction.html"
                                 aria-label="This is a button which can let you jump to our recipes section.">RECIPES</a>
                         </li>
-                        <li><a href="./underConstruction.html"
+                        <li><a href="./under-construction.html"
                                 aria-label="This is a button which can let you jump to our nutrition section.">NUTRITION</a>
                         </li>
                         <li><a href="./blog.html"
                                 aria-label="This is a button which can let you jump to our blog page.">BLOG</a></li>
-                        <li><a href="./underConstruction.html"
+                        <li><a href="./under-construction.html"
                                 aria-label="This is a button which can let you jump to our shop page.">SHOP</a>
                         </li>
                         <li><a href="./contact.html"
@@ -46,43 +46,46 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
+                <div class="header-shoppingbag">
                     <i class="fas fa-shopping-bag"
                         aria-label="This is a button which can let open your shopping bag."></i>
                     <p>2</p>
-                    <div>
-                        <div>
+                    <div class="header-shoppingbag-cart">
+                        <div class="flex flex-row flex-between">
                             <img src="./images/home-6.jpeg" alt="You already put a chicken hamburger into your bag.">
                             <p>Chicken Hamburger <span>x</span> 1</p>
                         </div>
-                        <div>
+                        <div class="flex flex-row flex-between">
                             <img src="./images/home-3.jpeg" alt="You already put a beef wrap into your bag.">
                             <p>Beef Wrap <span>x</span> 1</p>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="header-searchbar">
                     <i class="fas fa-search" aria-label="This is a button which can let open the search bar."></i>
                     <form>
-                        <p>Search your favorite taste here!</p>
-                        <input type="search" id="searchInputValue" name="searchInputValue">
-                        <a href="./underConstruction.html">
-                            <botton type="submit"
-                                aria-label="This is a button to let you submmit the keywords you want to search."><i
-                                    class="fab fa-searchengin" aria-hidden="true"></i></botton>
-                        </a>
+                        <legend>Search your favorite taste here!</legend>
+                        <div class="flex flex-row flex-between">
+                            <input type="search" id="searchInputValue" name="searchInputValue"
+                                placeholder="Kung Pao Chicken">
+
+                            <button type="submit"
+                                aria-label="This is a button to let you submmit the keywords you want to search."><a
+                                    href="./under-construction.html"><i class="fab fa-searchengin"
+                                        aria-hidden="true"></i></a></button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="blog-article">
+            <div class="article-tittle">
                 <h2>PINEAPPLE CHICKEN</h2>
                 <p>Post at July 11, 2018 | by Admin | in Recipes</p>
             </div>
-            <div>
+            <article>
                 <p>Morbi et accumsan est, non convallis metus. Etiam faucibus, leo et scelerisque facilisis, magna erat
                     dictum nibh, vel congue tortor massa vitae magna. Magna erat dictum nibh, vel congue tortor massa
                     vitae magna.</p>
@@ -101,11 +104,11 @@
                     black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut
                     eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory
                     celtuce parsley jÃ­cama salsify.</p>
-            </div>
-            <div>
+            </article>
+            <div class="article-tag">
                 <p><span>TAGS:</span> Recipes, Chicken, Pineapple, Mexican</p>
-                <div>
-                    <p>SHARE:</p>
+                <div class="flex flex-row">
+                    <p><span>SHARE:</span></p>
                     <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"
                             aria-label="This is a link let you visit our facebook."></i></a>
                     <a href="https://twitter.com/"><i class="fab fa-twitter"
@@ -114,10 +117,10 @@
                             aria-label="This is a link let you visit our instagram."></i></a>
                 </div>
             </div>
-            <div>
+            <div class="article-comment">
                 <img src="./images/blog-2.jpeg"
                     alt="Sally Lucas's profile, and she shared a feedback about the recipe below">
-                <div>
+                <div class="background-brown-grey-light comment-content">
                     <h3>SALLY LUCAS</h3>
                     <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water
                         spinach
@@ -129,36 +132,42 @@
                         gourd swiss chard wakame kohlrabi.</p>
                 </div>
             </div>
-            <div>
+            <div class="article-related">
                 <h3>RELATED POST</h3>
                 <div>
                     <div>
+                        <a href="under-construction.html">
                         <img src="./images/blog-3.jpeg"
                             alt="A fancy pink birthday cake with white candles and pink and white fresh flowers is on a white cake plate and hold by a lady.">
                         <h3>HOW TO BAKE THE PERFECT CAKE</h3>
                         <p>July 11, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+                        </a>
                     </div>
                     <div>
+                        <a href="under-construction.html">
                         <img src="./images/blog-4.jpeg"
                             alt="Three floral cupcakes which are decorated by fresh flowers, green cream and cutted strawbarries.">
                         <h3>FLORAL CUPCAKE</h3>
                         <p>July 19, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+                        </a>
                     </div>
                     <div>
+                        <a href="under-construction.html">
                         <img src="./images/blog-5.jpeg"
                             alt="A dish of salmon salad with onion and leaves is making on a withe plate.">
                         <h3>SINGLE POST WITH IMAGE</h3>
                         <p>July 22, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="article-comment-more">
                 <h3>02 COMMENTS</h3>
-                <div>
+                <div class="flex flex-row">
                     <img src="./images/blog-6.jpeg"
                         alt="Lucatony Avaro's profile, and she shared a feedback about the recipe below">
-                    <div>
-                        <div></div>
+                    <div class="background-brown-grey-light comment-content">
+                        <div class="grey-triangle"></div>
                         <h3>Lucatony Avaro <span>- Web Developer</span></h3>
                         <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram
                             celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot
@@ -166,11 +175,11 @@
                         <p>July 17, 2015 at 15 hours ago</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-row">
                     <img src="./images/blog-7.jpeg"
                         alt="Brian Hudson's profile, and she shared a feedback about the recipe below">
-                    <div>
-                        <div></div>
+                    <div class="background-brown-grey-light comment-content">
+                        <div class="grey-triangle"></div>
                         <h3>Brian Hudson <span>- Web Developer</span></h3>
                         <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean
                             corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong
@@ -180,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <form action="#" method="POST" name="commentSending">
+            <form action="#" method="POST" name="commentSending" class="comment-form flex flex-column flex-center">
                 <h3>LEAVE A COMMENT</h3>
                 <p>Your email address will not be published. Required field are marked *</p>
                 <div>
@@ -199,9 +208,9 @@
                 <button type="submit">SUBMIT COMMENT</button>
             </form>
         </section>
-        <section>
-            <div>
-                <div>
+        <section class="subscription-section background-black-light">
+            <div class="flex flex-column flex-evenly">
+                <div class="flex flex-column subscription-info">
                     <h4>DELICIOUS</h4>
                     <div>
                         <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce
@@ -218,7 +227,7 @@
                         <p>+1 234 567 8910</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-column subscription-info">
                     <h5>RECENT POSTS</h5>
                     <div>
                         <p>Beetroot water spinach okra water</p>
@@ -239,12 +248,14 @@
                         <p>Salsify pea sprouts fava bean</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-column subscription-form">
                     <h5>SUBSCRIBE NOW</h5>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
-                    <form action="#" method="POST" name="emailSubsription">
-                        <label class="sr-only" for="emailSubsriptionTextarea">Enter your email</label>
-                        <input type="email" id="emailSubsriptionTextarea" placeholder="Enter your email">
+                    <form action="#" method="POST" name="subscriptionSending" class="flex flex-row">
+                        <label class="sr-only" for="emailSubsriptionSending">Enter your email</label>
+                        <input type="email" id="emailSubsription" placeholder="Enter your email"
+                            class="background-brown-grey-dark">
+
                         <button type="submit" aria-label="This is the submitting button for email subscription."><i
                                 class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></button>
                     </form>
@@ -260,8 +271,10 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>Copyright © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
+    <footer class="background-black">
+        <div class="footer-wrapper">
+            <p>Copyright © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 

@@ -345,6 +345,16 @@ input[type=email] {
   width: 15%;
 }
 
+.grey-triangle {
+  border: 5px solid transparent;
+  border-right: 5px solid #f2f2f2;
+  height: 0;
+  position: absolute;
+  width: 0;
+  top: 5%;
+  left: -4.5%;
+}
+
 .background-black {
   background-color: #2E2E2E;
 }
@@ -599,7 +609,133 @@ nav li:hover::before, nav li:focus-within::before {
   color: #64A604;
 }
 
-header {
+.blog-header {
+  background-image: url(../images/blog-1.jpeg);
+}
+
+.blog-article {
+  margin: 5vh auto;
+  width: 90%;
+}
+
+.blog-article .article-tittle p {
+  color: #2E2E2E;
+}
+
+.blog-article article p {
+  color: #333;
+  margin: 3vh 0;
+}
+
+.article-tag {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin-bottom: 5vh;
+}
+
+.article-tag span {
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+}
+
+.article-tag a {
+  color: #999;
+  margin: 4% 5%;
+}
+
+.article-comment {
+  border-bottom: 1px solid #999;
+  margin-bottom: 10vh;
+  padding-bottom: 5vh;
+}
+
+.article-comment img {
+  width: 40%;
+}
+
+.comment-content {
+  padding: 3vh 3vw;
+}
+
+.comment-content p {
+  color: #333;
+}
+
+.article-related {
+  border-bottom: 1px solid #999;
+  margin: 0 auto;
+}
+
+.article-related h3 {
+  font-size: 0.8rem;
+}
+
+.article-related a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.article-related a img {
+  width: 100%;
+}
+
+.article-related a h3 {
+  margin-bottom: 0;
+}
+
+.article-related a p {
+  margin: 0.5vh 0 5vh;
+}
+
+.article-comment-more {
+  margin: 5vh 0;
+}
+
+.article-comment-more .flex.flex-row {
+  margin-bottom: 5vh;
+}
+
+.article-comment-more .flex.flex-row img {
+  height: 100%;
+  margin-right: 3vw;
+}
+
+.article-comment-more .flex.flex-row .comment-content {
+  position: relative;
+}
+
+.article-comment-more span {
+  display: block;
+  font-family: "Lora", serif;
+  font-weight: lighter;
+}
+
+.comment-form h3 {
+  text-align: center;
+}
+
+.comment-form input[type=text],
+.comment-form input[type=email],
+.comment-form textarea {
+  border: 1px solid #999;
+  color: #999;
+  font-family: "Lora", serif;
+  font-size: 0.8rem;
+  margin-bottom: 3vh;
+  padding: 3% 0 3% 5%;
+  width: 100%;
+}
+
+.comment-form button {
+  background-color: #64A604;
+  border: none;
+  color: #F6F6F6;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  padding: 3.85% 0;
+}
+
+.home-header {
   background-image: url(../images/home-1.jpeg);
 }
 

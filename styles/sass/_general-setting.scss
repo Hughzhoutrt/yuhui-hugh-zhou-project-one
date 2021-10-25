@@ -65,6 +65,17 @@ input[type=email] {
   width: 15%;
 }
 
+.grey-triangle {
+  border: 5px solid transparent;
+  border-right: 5px solid $color-brown-grey-light;
+  height: 0;
+  position:absolute;
+  width: 0;
+  
+  top: 5%;
+  left:-4.5%;
+}
+
 //Background color 
 .background-black {
   background-color: $color-black;
