@@ -1,12 +1,15 @@
 .uc-header {
-    background-image:url(../images/blog-4.jpeg);
+    background-image:url(../images/home-4.jpeg);
     background-position: center;
     background-size: cover;
     height: 20vh;
 }
 
 .uc-main {
+    flex-grow: 1;
+
     h1, h2 {
+        margin-top: 5vh;
         text-align: center;
     }
 

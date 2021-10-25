@@ -836,13 +836,20 @@ nav li:hover::before, nav li:focus-within::before {
 }
 
 .uc-header {
-  background-image: url(../images/blog-4.jpeg);
+  background-image: url(../images/home-4.jpeg);
   background-position: center;
   background-size: cover;
   height: 20vh;
 }
 
+.uc-main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .uc-main h1, .uc-main h2 {
+  margin-top: 5vh;
   text-align: center;
 }
 

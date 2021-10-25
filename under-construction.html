@@ -17,8 +17,67 @@
 </head>
 <body>
     <a class="skip-link" href="ud-main"><Button>Skip to main content</Button></a>
-    <header class="uc-header" aria-hidden="true">
-        <!-- Full image -->
+    <header class="uc-header">
+        <div class="flex flex-row flex-between header-wrapper">
+            <h1>DELICIOUS</h1>
+            <div class="flex flex-row flex-evenly header-toolbar">
+                <nav>
+                    <button><i class="fas fa-caret-square-down"
+                        aria-label="This is a button which can let open the navigation dropdown menu."></i></button>
+                    <ul>
+                        <li><a href="./index.html"
+                                aria-label="This is a button which can let you jump to our home page.">HOME</a></li>
+                        <li><a href="./index.html#about"
+                                aria-label="This is a button which can let you jump to our about section.">ABOUT</a>
+                        </li>
+                        <li><a href="./under-construction.html"
+                                aria-label="This is a button which can let you jump to our recipes section.">RECIPES</a>
+                        </li>
+                        <li><a href="./under-construction.html"
+                                aria-label="This is a button which can let you jump to our nutrition section.">NUTRITION</a>
+                        </li>
+                        <li><a href="./blog.html"
+                                aria-label="This is a button which can let you jump to our blog page.">BLOG</a></li>
+                        <li><a href="./under-construction.html"
+                                aria-label="This is a button which can let you jump to our shop page.">SHOP</a>
+                        </li>
+                        <li><a href="./contact.html"
+                                aria-label="This is a button which can let you jump to our contact page.">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-shoppingbag">
+                    <p>2</p>
+                    <button><i class="fas fa-shopping-bag"
+                        aria-label="This is a button which can let open your shopping bag."></i></button>
+                    <div class="header-shoppingbag-cart">
+                        <div class="flex flex-row flex-between" tabindex=0>
+                            <img src="./images/home-6.jpeg" alt="You already put a chicken hamburger into your bag.">
+                            <p>Chicken Hamburger <span>x</span> 1</p>
+                        </div>
+                        <div class="flex flex-row flex-between" tabindex=0>
+                            <img src="./images/home-3.jpeg" alt="You already put a beef wrap into your bag.">
+                            <p>Beef Wrap <span>x</span> 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-searchbar">
+                    <button><i class="fas fa-search" aria-label="This is a button which can let open the search bar."></i></button>
+                    <form>
+                        <legend>Search your favorite taste here!</legend>
+                        <div class="flex flex-row flex-between">
+                            <input type="search" id="searchInputValue" name="searchInputValue"
+                                placeholder="Kung Pao Chicken">
+
+                            <button type="submit"
+                                aria-label="This is a button to let you submmit the keywords you want to search."><a
+                                    href="./under-construction.html"><i class="fab fa-searchengin"
+                                        aria-hidden="true"></i></a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </header>
     <main id="ud-main" class="flex flex-column flex-center background-brown-grey-light uc-main">
         <h1>PAGE NOT AVAILABLE</h1>
