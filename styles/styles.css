@@ -735,6 +735,137 @@ nav li:hover::before, nav li:focus-within::before {
   padding: 3.85% 0;
 }
 
+.contact-header {
+  background-image: url(../images/contact-1.jpeg);
+}
+
+.contact-content {
+  position: relative;
+}
+
+.contact-content .contact-comment {
+  margin: 5vh 5%;
+}
+
+.contact-content .contact-comment button {
+  width: 100%;
+}
+
+.contact-content .contact-comment input[type=text],
+.contact-content .contact-comment input[type=email],
+.contact-content .contact-comment textarea {
+  background-color: #f2f2f2;
+}
+
+.contact-content .aside-button {
+  color: #64A604;
+  position: absolute;
+  text-decoration: none;
+  width: 40vw;
+  top: 0;
+  left: 60vw;
+}
+
+.contact-content .aside-button span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+}
+
+.contact-content .aside-content {
+  display: none;
+  padding: 1vh 3vw;
+  position: absolute;
+  width: 100vw;
+  top: -59vh;
+  left: 0;
+}
+
+.contact-content .aside-content h2 {
+  margin-bottom: 1vh;
+}
+
+.contact-content .aside-content span {
+  color: #2E2E2E;
+}
+
+.contact-content .aside-content div {
+  margin-bottom: 1vh;
+}
+
+.aside-button-back {
+  color: #64A604;
+  position: absolute;
+  text-decoration: none;
+  top: 85%;
+  left: 80vw;
+}
+
+.aside-button-back span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #2E2E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+}
+
+.aside-content:target {
+  display: block;
+}
+
+.contact-decoration {
+  background-image: url(../images/contact-2.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+
+.uc-header {
+  background-image: url(../images/blog-4.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+
+.uc-main h1, .uc-main h2 {
+  text-align: center;
+}
+
+.uc-main iframe {
+  width: 100%;
+}
+
+.uc-main p {
+  color: #333;
+  margin-right: 10%;
+  text-align: end;
+}
+
+.uc-main p a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-wrapper {
+  color: #999;
+  margin: 0 auto;
+  padding: 3vh 0;
+  width: 80%;
+}
+
+.footer-wrapper p {
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+.footer-wrapper p span {
+  color: #64A604;
+}
+
 .home-header {
   background-image: url(../images/home-1.jpeg);
 }

@@ -1,0 +1,88 @@
+//CONTACT PAGE START
+.contact-header {
+    background-image: url(../images/contact-1.jpeg);
+}
+
+.contact-content {
+    position: relative;
+
+    .contact-comment {
+        margin: 5vh 5%;
+    
+        button {
+            width: 100%;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea {
+            background-color: $color-brown-grey-light;
+        }
+    }
+
+    .aside-button {
+        color: $color-green-dark;
+        position: absolute;
+        text-decoration: none;
+        width: 40vw;
+
+        top:0;
+        left:60vw;
+
+        span {
+            align-self: center;
+            color:  $color-black;
+            font-family: $font-raleway;
+            font-size: 0.8rem;
+        }
+    }
+
+    .aside-content {
+        display: none;
+        padding:1vh 3vw;
+        position:absolute;
+        width: 100vw;
+
+        top: -59vh;
+        left: 0;
+
+        h2 {
+            margin-bottom: 1vh;
+        }
+
+        span {
+            color: $color-black;
+        }
+
+        div {
+            margin-bottom: 1vh;
+        }
+    }
+}
+
+.aside-button-back {
+    color: $color-green-dark;
+    position: absolute;
+    text-decoration: none;
+
+    top:85%;
+    left:80vw;
+
+    span {
+        align-self: center;
+        color:  $color-black;
+        font-family: $font-raleway;
+        font-size: 0.8rem;
+    }
+}
+
+.aside-content:target {
+    display:block;
+}
+
+.contact-decoration {
+    background-image: url(../images/contact-2.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+}

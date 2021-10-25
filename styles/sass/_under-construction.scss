@@ -1,0 +1,43 @@
+.uc-header {
+    background-image:url(../images/blog-4.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+}
+
+.uc-main {
+    h1, h2 {
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    p {
+        color: $color-black-light;
+        margin-right: 10%;
+        text-align: end;
+
+        a {
+            color: $color-black-light;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-wrapper {
+    color: $color-brown-grey;
+    margin: 0 auto;
+    padding: 3vh 0;
+    width: 80%;
+
+    p {
+        font-size: 0.6rem;
+        margin:0;
+
+        span {
+            color: $color-green-dark;
+        }
+    }
+}

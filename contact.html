@@ -12,15 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <!-- CSS HomepageStylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Add icon before tittle -->
+    <link rel="tittle icon" href="./images/contact-icon.png">
     <title>Delicious Contact</title>
 </head>
 
 <body>
-    <a class="skip-link"><Button>Skip to main content</Button></a>
-    <header>
-        <div>
+    <a class="skip-link" href="#contact-content"><Button>Skip to main content</Button></a>
+    <header class="contact-header">
+        <div class="flex flex-row flex-between header-wrapper">
             <h1>DELICIOUS</h1>
-            <div>
+            <div class="flex flex-row flex-evenly header-toolbar">
                 <nav>
                     <i class="fas fa-caret-square-down"
                         aria-label="This is a button which can let open the navigation dropdown menu."></i>
@@ -30,52 +32,60 @@
                         <li><a href="#about"
                                 aria-label="This is a button which can let you jump to our about section.">ABOUT</a>
                         </li>
-                        <li><a href="./underConstruction.html"
+                        <li><a href="./under-construction.html"
                                 aria-label="This is a button which can let you jump to our recipes section.">RECIPES</a>
                         </li>
-                        <li><a href="./underConstruction.html"
+                        <li><a href="./under-construction.html"
                                 aria-label="This is a button which can let you jump to our nutrition section.">NUTRITION</a>
                         </li>
                         <li><a href="./blog.html"
                                 aria-label="This is a button which can let you jump to our blog page.">BLOG</a></li>
-                        <li><a href="./underConstruction.html" aria-label="This is a button which can let you jump to our shop page.">SHOP</a>
+                        <li><a href="./under-construction.html"
+                                aria-label="This is a button which can let you jump to our shop page.">SHOP</a>
                         </li>
                         <li><a href="./contact.html"
                                 aria-label="This is a button which can let you jump to our contact page.">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
-                <div>
+                <div class="header-shoppingbag">
                     <i class="fas fa-shopping-bag"
                         aria-label="This is a button which can let open your shopping bag."></i>
                     <p>2</p>
-                    <div>
-                        <div>
+                    <div class="header-shoppingbag-cart">
+                        <div class="flex flex-row flex-between">
                             <img src="./images/home-6.jpeg" alt="You already put a chicken hamburger into your bag.">
                             <p>Chicken Hamburger <span>x</span> 1</p>
                         </div>
-                        <div>
+                        <div class="flex flex-row flex-between">
                             <img src="./images/home-3.jpeg" alt="You already put a beef wrap into your bag.">
                             <p>Beef Wrap <span>x</span> 1</p>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="header-searchbar">
                     <i class="fas fa-search" aria-label="This is a button which can let open the search bar."></i>
                     <form>
-                        <p>Search your favorite taste here!</p>
-                        <input type="search" id="searchInputValue" name="searchInputValue">
-                        <a href="./underConstruction.html"><botton type="submit" aria-label="This is a button to let you submmit the keywords you want to search."><i class="fab fa-searchengin" aria-hidden="true"></i></botton></a>
+                        <legend>Search your favorite taste here!</legend>
+                        <div class="flex flex-row flex-between">
+                            <input type="search" id="searchInputValue" name="searchInputValue"
+                                placeholder="Kung Pao Chicken">
+
+                            <button type="submit"
+                                aria-label="This is a button to let you submmit the keywords you want to search."><a
+                                    href="./under-construction.html"><i class="fab fa-searchengin"
+                                        aria-hidden="true"></i></a></button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <secion>
-            <div>
+        <secion id="contact-content" class="contact-content">
+            <div id="contact-comment" class="contact-comment">
                 <h2>DROP US A LINE</h2>
-                <form action="#" method="POST" name="messageSending">
+                <form action="#" method="POST" name="messageSending" class="comment-form">
                     <div>
                         <label class="sr-only" for="nameMessageSending">Enter your name</label>
                         <input type="text" id="nameMessageSending" placeholder="Your Name">
@@ -90,35 +100,42 @@
                     <label class="sr-only" for="textareaMessageSending">Enter your message</label>
                     <textarea id="textareaMessageSending" placeholder="Message"></textarea>
 
-                    <button type="submit">SEND MESSAGE<i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></button>
+                    <button type="submit">SEND MESSAGE<i class="fas fa-long-arrow-alt-right"
+                            aria-hidden="true"></i></button>
                 </form>
             </div>
-            <aside>
-                <i class="fas fa-chevron-left" aria-label="This is a button to let you open the aside section which is about our contact information and working hours."></i>
+            <a class="aside-button flex" href="#aside-content"><i class="fas fa-chevron-left"
+                aria-label="This is a button to let you open the aside section which is about our contact information and working hours."></i><span>  More Information!</span></a>
+            <aside id="aside-content" class="flex flex-row background-brown-grey-light aside-content">
                 <div>
-                    <h2>CONTACT DETAILS</h2>
-                    <p>Beetroot water spinack okra water chetnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bus tomato kale.</p>
+                    <div>
+                        <h2>CONTACT DETAILS</h2>
+                        <p><span>Beetroot water spinack okra water chetnut ricebean pea catsear courgette summer purslane.
+                            Water spinach arugula pea tatsoi aubergine spring onion bus tomato kale.</span></p>
+                    </div>
+                    <div>
+                        <h2>WORKING HOURS</h2>
+                        <p><span>MON - FRI:</span> 08:00am - 05:30pm</p>
+                        <p>Not working on Saturday and Sunday!</p>
+                    </div>
+                    <div>
+                        <h2>CONTACT INFO</h2>
+                        <p>A delicious restuarant</p>
+                        <p>Toronto, Ontario</p>
+                        <p>yum@food.com</p>
+                        <p>+1 234 567 8910</p>
+                    </div>
                 </div>
-                <div>
-                    <h2>WORKING HOURS</h2>
-                    <p><span>MON - FRI:</span> 08:00am - 05:30pm</p>
-                    <p>Not working on Saturday and Sunday!</p>
-                </div>
-                <div>
-                    <h2>CONTACT INFO</h2>
-                    <p>A delicious restuarant</p>
-                    <p>Toronto, Ontario</p>
-                    <p>yum@food.com</p>
-                    <p>+1 234 567 8910</p>
-                </div>
+                <a class="aside-button-back flex" href="#contact-comment"><span>Back</span><i class="fas fa-chevron-right"
+                    aria-label="This is a button to let you close the aside section which is about our contact information and working hours."></i></a>
             </aside>
         </secion>
-        <section>
+        <section class="contact-decoration" aria-hidden="true">
             <!-- Background picture for decoration(dragon fruit) -->
         </section>
-        <section>
-            <div>
-                <div>
+        <section class="subscription-section background-black-light">
+            <div class="flex flex-column flex-evenly">
+                <div class="flex flex-column subscription-info">
                     <h4>DELICIOUS</h4>
                     <div>
                         <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce
@@ -135,7 +152,7 @@
                         <p>+1 234 567 8910</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-column subscription-info">
                     <h5>RECENT POSTS</h5>
                     <div>
                         <p>Beetroot water spinach okra water</p>
@@ -156,26 +173,33 @@
                         <p>Salsify pea sprouts fava bean</p>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-column subscription-form">
                     <h5>SUBSCRIBE NOW</h5>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
-                    <form action="#" method="POST" name="emailSubsription">
-                        <label class="sr-only" for="emailSubsriptionTextarea">Enter your email</label>
-                        <input type="email" id="emailSubsriptionTextarea" placeholder="Enter your email">
+                    <form action="#" method="POST" name="subscriptionSending" class="flex flex-row">
+                        <label class="sr-only" for="emailSubsriptionSending">Enter your email</label>
+                        <input type="email" id="emailSubsription" placeholder="Enter your email"
+                            class="background-brown-grey-dark">
+
                         <button type="submit" aria-label="This is the submitting button for email subscription."><i
                                 class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></button>
                     </form>
                     <div>
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" aria-label="This is a link let you visit our facebook."></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter" aria-label="This is a link let you visit our twitter."></i></a>
-                        <a href="https://instagram.com"><i class="fab fa-instagram" aria-label="This is a link let you visit our instagram."></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"
+                                aria-label="This is a link let you visit our facebook."></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"
+                                aria-label="This is a link let you visit our twitter."></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"
+                                aria-label="This is a link let you visit our instagram."></i></a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Copyright © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
+    <footer class="background-black">
+        <div class="footer-wrapper">
+            <p>Copyright © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 
