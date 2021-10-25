@@ -396,11 +396,20 @@ header .header-wrapper .header-toolbar {
   width: 40%;
 }
 
+.header-toolbar button,
+.header-shoppingbag button,
+.header-searchbar button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
 nav {
   position: relative;
 }
 
-nav:hover ul {
+nav:hover ul,
+nav button:focus-within + ul {
   display: block;
 }
 
@@ -412,7 +421,7 @@ nav ul {
   padding: 40% 0;
   position: absolute;
   width: 600%;
-  top: 10%;
+  top: 30%;
   left: -10%;
 }
 
@@ -458,7 +467,8 @@ nav li:hover::before, nav li:focus-within::before {
   left: 60%;
 }
 
-.header-shoppingbag:hover .header-shoppingbag-cart {
+.header-shoppingbag:hover .header-shoppingbag-cart,
+.header-shoppingbag button:focus-within + .header-shoppingbag-cart {
   display: block;
 }
 
@@ -470,7 +480,7 @@ nav li:hover::before, nav li:focus-within::before {
   padding: 50% 0;
   position: absolute;
   width: 1400%;
-  top: 60%;
+  top: 70%;
   left: -1000%;
 }
 
@@ -512,7 +522,8 @@ nav li:hover::before, nav li:focus-within::before {
   position: relative;
 }
 
-.header-searchbar:hover form {
+.header-searchbar:hover form,
+.header-searchbar button:focus-within + form {
   display: block;
 }
 
@@ -525,7 +536,7 @@ nav li:hover::before, nav li:focus-within::before {
   padding: 50% 50%;
   position: absolute;
   width: 1100%;
-  top: 60%;
+  top: 70%;
   left: -900%;
 }
 
