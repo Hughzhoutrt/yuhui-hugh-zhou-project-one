@@ -176,4 +176,70 @@
             width: 40%;
         }
     }
+
+    .article-related .flex-r.flex-column-r {
+        & > div {
+            width: 40%;
+        }
+    }
+
+    .article-related {
+        h3 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .article-related {
+        .flex-r.flex-row-rr > div{
+            padding:1%;
+            width: 33%;
+        }
+    }
+
+    .comment-form {
+        h3 {
+            text-align: left;
+        }
+
+        input[type=text]:nth-of-type(1),
+        input[type=email] {
+            width: 48%;
+        }
+
+        input[type=text]:nth-of-type(1) {
+            margin-right:2%;
+        }
+
+        input[type=email] {
+            margin-left:2%;
+        }
+
+        textarea {
+            height: 20vh;
+        }
+    
+        input[type=text],
+        input[type=email],
+        textarea {
+            font-size: 1rem;
+            margin-bottom: 1vh;
+            padding: 2% 0 2% 2%;
+            
+        }
+    
+        button {
+            background-color: $color-green-dark;
+            border: none;
+            color: $color-white;
+            font-family: $font-raleway;
+            font-size: 1.2rem;
+            margin: 0 ;
+            padding: 3.85% 0;
+            width: 35%;
+        }
+    }
+
+
 }

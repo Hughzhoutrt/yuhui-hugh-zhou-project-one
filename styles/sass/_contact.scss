@@ -120,31 +120,116 @@
     }
 }
 
+@media(min-width:600px){
+    .contact-content .contact-comment { 
+        button {
+            font-size: 1rem;
+        }
+
+        i {
+            font-size: 1.2rem;
+            margin-left: 2%;
+        }
+    }   
+    
+    .contact-content .aside-button {
+        font-size: 1.2rem;
+
+        top:0;
+        left:70vw;
+
+        span {
+            font-size: 1rem;
+            margin-left:2%;
+        }
+    }
+    
+    .contact-content .aside-button-back {
+        font-size: 1.2rem;
+
+        left:85vw;
+    
+        span {
+            font-size: 1rem;
+            margin-right:7%;
+        }
+    }
+}
+
+
 @media (min-width: 700px) {
     .contact-content {
         .aside-button {
             top:0;
-            left:80vw;
+            left:75vw;
         }
     }
 }
 
 @media (min-width: 768px) {
+    .contact-content .contact-comment { 
+        button {
+            font-size: 1.2rem;
+        }
+
+        i {
+            font-size: 1.2rem;
+        }
+    }   
+
+    .contact-content .aside-button {
+        font-size: 1.3rem;
+
+        left:72vw;
+
+        span {
+            font-size: 1.2rem;
+        }
+    }
+    
+    .contact-content .aside-button-back {
+        font-size: 1.3rem;
+    
+        span {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (min-width: 900px) {
     .contact-content {
         .aside-button {
-            left:75vw;
+            left:80vw;
     
             span {
                 font-size: 1rem;
             }
         }
     }
+}
+
+@media (min-width: 1024px) {
+    .contact-content {
+        position: static;
+    
+        .contact-comment {
+            width: 40%;
+        }
+    
+        .aside-button {
+           display: none;
+        }
+    
+        .aside-content {
+            border: none;
+            display: block;
+            padding:5vh 5%;
+            position:static;
+            width: 50%;
+        }
+    }
 
     .aside-button-back {
-        left:85vw;
-    
-        span {
-            font-size: 1rem;
-        }
+        display: none;
     }
 }

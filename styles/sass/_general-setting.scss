@@ -99,14 +99,12 @@ input[type=email] {
 
 @media (min-width: 438px) {
   .grey-triangle {
-    top: 5%;
     left:-5.5%;
   }
 }
 
 @media (min-width: 504px) {
   .grey-triangle {
-    top: 5%;
     left:-4%;
   }
 }
@@ -131,7 +129,6 @@ input[type=email] {
 
 @media (min-width: 671px) {
   .grey-triangle {
-    top: 5%;
     left:-3%;
   }
 }
@@ -163,5 +160,20 @@ input[type=email] {
     font-family:  $font-lora;
     font-size: 1rem;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 857px) {
+  .grey-triangle {
+    left:-2.5%;
+  }
+}
+
+@media (min-width: 1019px) {
+  .grey-triangle {
+    border: 15px solid transparent;
+    border-right: 15px solid $color-brown-grey-light;
+
+    left:-3.5%;
   }
 }

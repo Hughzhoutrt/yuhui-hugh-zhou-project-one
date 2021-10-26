@@ -29,7 +29,6 @@
 .flex-wrap {
     flex-wrap: wrap;
 }
-
 //min-width: 600px setting -r
 @media (min-width: 600px) {
     .flex-r {
@@ -50,5 +49,23 @@
 
     .align-self-end-r {
         align-self:flex-end;
+    }
+}
+//min-width: 1024px setting -rr
+@media (min-width: 1024px) {
+    .flex-rr {
+        display: flex;
+    }
+
+    .flex-row-rr {
+        flex-direction: row;
+    }
+
+    .flex-column-rr {
+        flex-direction: column;
+    }
+
+    .flex-wrap-rr {
+        flex-wrap: wrap;
     }
 }

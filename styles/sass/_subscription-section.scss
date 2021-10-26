@@ -69,4 +69,32 @@
             }
         }
     }
+
+    .subscription-form {
+        form {
+            i {
+                font-size: 1.2rem;
+            }
+        }
+
+        div {
+            a{
+                font-size: 150%;
+
+                i {
+                    padding-top: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .subscription-form {
+        form {
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
