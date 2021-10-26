@@ -73,3 +73,17 @@
         flex-direction: row-reverse;
     }
 }
+//min-width: 1280px setting -rrr
+@media (min-width: 1280px) {
+    .flex-rrr {
+        display: flex;
+    }
+
+    .flex-row-rrr {
+        flex-direction: row;
+    }
+
+    .flex-column-rrr {
+        flex-direction: column;
+    }
+}

@@ -190,6 +190,23 @@
     }
 }
 
+@media(min-width: 950px) {
+    .article-comment {
+        img {
+            height:311px;
+            margin-right: 5%;
+            width: 240px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            height:311px;
+            width: 100%;
+        }
+    }
+}
+
 @media(min-width: 1024px) {
     .article-related {
         .flex-r.flex-row-rr > div{
