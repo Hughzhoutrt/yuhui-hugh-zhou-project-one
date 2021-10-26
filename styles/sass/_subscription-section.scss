@@ -98,3 +98,16 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .subscription-section .flex.flex-evenly {
+        width: 90%;
+
+        .subscription-info-one,
+        .subscription-info-two,
+        .subscription-form {
+            margin: 0;
+            width: 25%;
+        }
+    }
+}

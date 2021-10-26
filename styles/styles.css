@@ -336,6 +336,12 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .flex-row-reverse-rr {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 body {
@@ -399,7 +405,7 @@ input[type=email] {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border-bottom: 0.5vh solid #64A604;
+  border-bottom: 3px solid #64A604;
   margin-bottom: 3vh;
   width: 15%;
 }
@@ -818,6 +824,18 @@ nav li:hover::before, nav li:focus-within::before {
   }
 }
 
+@media (min-width: 1024px) {
+  .subscription-section .flex.flex-evenly {
+    width: 90%;
+  }
+  .subscription-section .flex.flex-evenly .subscription-info-one,
+  .subscription-section .flex.flex-evenly .subscription-info-two,
+  .subscription-section .flex.flex-evenly .subscription-form {
+    margin: 0;
+    width: 25%;
+  }
+}
+
 .footer-wrapper {
   color: #999;
   margin: 0 auto;
@@ -1010,13 +1028,13 @@ nav li:hover::before, nav li:focus-within::before {
   }
   .comment-form input[type=text]:nth-of-type(1),
   .comment-form input[type=email] {
-    width: 48%;
+    width: 49%;
   }
   .comment-form input[type=text]:nth-of-type(1) {
-    margin-right: 2%;
+    margin-right: 1%;
   }
   .comment-form input[type=email] {
-    margin-left: 2%;
+    margin-left: 1%;
   }
   .comment-form textarea {
     height: 20vh;
@@ -1239,6 +1257,17 @@ nav li:hover::before, nav li:focus-within::before {
   .aside-button-back {
     display: none;
   }
+  .contact-comment .comment-form input[type=text],
+  .contact-comment .comment-form input[type=email],
+  .contact-comment .comment-form textarea {
+    border: none;
+  }
+  .contact-comment .comment-form > input[type=text] {
+    width: 100%;
+  }
+  .contact-comment .comment-form button {
+    width: 45%;
+  }
 }
 
 .uc-header {
@@ -1330,6 +1359,7 @@ nav li:hover::before, nav li:focus-within::before {
   background-color: #64A604;
   border-style: none;
   color: #F6F6F6;
+  cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 0.9rem;
   margin: 3vh 0 10vh;
@@ -1481,5 +1511,96 @@ nav li:hover::before, nav li:focus-within::before {
   }
   .home-feedback .flex.flex-between {
     width: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-main {
+    margin: 0;
+  }
+  .home-main .main-description {
+    margin-bottom: 0;
+  }
+  .home-main .main-description > div {
+    width: 50%;
+  }
+  .home-main .main-description .green-underline {
+    margin-bottom: 1vh;
+  }
+  .home-main img {
+    width: 50%;
+  }
+  .home-main .flex-rr.flex-row-reverse-rr > div {
+    width: 50%;
+  }
+  .home-main .flex-rr.flex-row-reverse-rr img {
+    height: 100%;
+  }
+  .main-description .flex.flex-center {
+    padding: 0 5%;
+    width: 50%;
+  }
+  .main-description button {
+    font-size: 1rem;
+    margin: 1vh 0 0;
+  }
+  .main-description img {
+    height: 100%;
+  }
+  .home-main .flex.flex-wrap {
+    margin: 0 auto;
+    padding: 2% 2%;
+  }
+  .home-main .flex.flex-wrap h3 {
+    font-size: 1rem;
+    margin-bottom: 1vh;
+  }
+  .home-main .flex.flex-wrap p {
+    font-size: 0.7rem;
+  }
+  .home-main .flex.flex-wrap i {
+    font-size: 1rem;
+    margin-right: 2vw;
+  }
+  .home-main .flex.flex-wrap div {
+    margin-bottom: 0;
+  }
+  .home-gallery {
+    margin: 5vh auto 0;
+    position: static;
+  }
+  .home-gallery .gallery-bar {
+    display: none;
+  }
+  .gallery-content img:nth-of-type(1) {
+    display: block;
+    width: 33.33%;
+  }
+  .gallery-content img:nth-of-type(1) ~ img {
+    display: block;
+    position: static;
+    width: 33.33%;
+  }
+  .home-feedback {
+    margin: 0vh auto 0;
+  }
+  .home-feedback .green-underline {
+    width: 10%;
+  }
+  .home-feedback .flex.flex-column {
+    font-size: 1rem;
+  }
+  .home-feedback .flex.flex-column .fa-quote-right {
+    top: 70%;
+    left: 101%;
+  }
+  .home-feedback .flex.flex-between {
+    font-size: 1rem;
+    margin: 3vh auto 5vh;
+    width: 8%;
+  }
+  .home-restuarant {
+    margin: 5vh auto;
+    width: 80%;
   }
 }

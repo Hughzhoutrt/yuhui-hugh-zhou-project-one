@@ -52,6 +52,7 @@
         background-color: $color-green-dark;
         border-style: none;
         color: $color-white;
+        cursor: pointer;
         font-family:  $font-raleway;
         font-size: 0.9rem;
         margin: 3vh 0 10vh;
@@ -225,4 +226,130 @@
     .home-feedback .flex.flex-between {
         width: 20%;
     }
+}
+
+@media(min-width:1024px) {
+    // About section START
+    .home-main {
+        margin: 0;
+    
+        .main-description {
+            margin-bottom:0;
+
+            & > div {
+                width: 50%;
+            }
+
+            .green-underline {
+                margin-bottom: 1vh;
+            }
+        }
+    
+        img {
+            width: 50%;
+        }
+    
+        .flex-rr.flex-row-reverse-rr {
+            & > div {
+                width: 50%;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .main-description {
+        .flex.flex-center { 
+            padding: 0 5%;
+            width: 50%;
+        }
+    
+        button {
+            font-size: 1rem;
+            margin: 1vh 0 0;
+        }
+    
+        img {
+            height: 100%;
+        }
+    }
+
+    .home-main .flex.flex-wrap {
+        margin: 0 auto;
+        padding: 2% 2%;
+
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 1vh;
+        }
+
+        p{
+            font-size: 0.7rem;
+        }
+
+        i {
+            font-size: 1rem;
+            margin-right: 2vw;
+        }
+
+        div {
+            margin-bottom: 0;
+        }
+    }
+    // About section END
+    //Restuarant gallery section START
+    .home-gallery {
+        margin: 5vh auto 0;
+        position:static;
+
+        .gallery-bar {
+            display: none; 
+        }   
+    }
+
+    .gallery-content {
+        & img:nth-of-type(1) {
+            display: block;
+            width: 33.33%;
+        }
+
+        & img:nth-of-type(1) ~ img {
+            display:block;
+            position:static;
+            width: 33.33%;
+        }
+    }  
+    //Restuarant gallery section End
+    //Client feedback section START
+    .home-feedback {
+        margin: 0vh auto 0;
+
+        .green-underline {
+            width: 10%;
+        }
+    }
+
+    .home-feedback .flex.flex-column {
+        font-size: 1rem;
+    
+        .fa-quote-right {
+            top: 70%;
+            left:101%;
+        }
+    }
+    
+    .home-feedback .flex.flex-between {
+        font-size: 1rem;
+        margin:3vh auto 5vh;
+        width: 8%;
+    }
+    //Client feedback section END
+    //Restuarant information section START
+    .home-restuarant {
+        margin: 5vh auto;
+        width: 80%;
+    }
+    //Restuarant information section START
 }

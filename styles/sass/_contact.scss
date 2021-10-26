@@ -232,4 +232,20 @@
     .aside-button-back {
         display: none;
     }
+
+    .contact-comment .comment-form {
+       input[type=text],
+       input[type=email],
+       textarea {
+           border:none;
+       }
+
+       & > input[type=text] {
+           width: 100%;
+       }
+
+       button {
+           width: 45%;
+       }
+    }
 }
