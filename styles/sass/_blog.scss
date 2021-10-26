@@ -130,7 +130,33 @@
         color: $color-white;
         font-family: $font-raleway;
         font-size: 0.8rem;
+        margin: 0 auto;
         padding: 3.85% 0;
+        width: 50%;
     }
 }
 //BLOG PAGE END
+
+@media(min-width: 600px) {
+    .article-comment {
+        margin-bottom: 5vh;
+    
+        img {
+            height:100%;
+            margin-right: 2%;
+            width: 28%;
+        }
+
+        div {
+            width: 70%
+        }
+    }
+
+    .article-related .flex-r.flex-column-r {
+        & > div {
+            width: 50%;
+        }
+    }
+
+    
+}

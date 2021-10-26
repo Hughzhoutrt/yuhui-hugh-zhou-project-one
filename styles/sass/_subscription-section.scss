@@ -46,3 +46,18 @@
         padding-bottom:5%;
     }
 }
+
+@media (min-width: 600px) {
+    .subscription-info { // first two sections
+        margin: 0 5%;
+        width: 40%;
+    }
+
+    .subscription-section .flex.flex-evenly {
+        .subscription-info {
+            & div:last-of-type {
+                margin-bottom: 2vh;
+            }
+        }
+    }
+}

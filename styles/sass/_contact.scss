@@ -10,7 +10,10 @@
         margin: 5vh 5%;
     
         button {
-            width: 100%;
+           background-color: white;
+           color: $color-green-dark;
+           cursor: pointer;
+           text-align: left;
         }
 
         input[type=text],
@@ -38,12 +41,13 @@
     }
 
     .aside-content {
+        border: 1px solid $color-black-light;
         display: none;
         padding:1vh 3vw;
         position:absolute;
         width: 100vw;
 
-        top: -59vh;
+        top: -60vh;
         left: 0;
 
         h2 {
@@ -85,4 +89,33 @@
     background-position: center;
     background-size: cover;
     height: 20vh;
+}
+
+
+
+@media (min-width: 400px) {
+    .contact-content {
+        .aside-button {
+            top:0;
+            left:65vw;
+        }
+    }
+}
+
+@media (min-width: 450px) {
+    .contact-content {
+        .aside-button {
+            top:0;
+            left:70vw;
+        }
+    }
+}
+
+@media (min-width: 550px) {
+    .contact-content {
+        .aside-button {
+            top:0;
+            left:75vw;
+        }
+    }
 }

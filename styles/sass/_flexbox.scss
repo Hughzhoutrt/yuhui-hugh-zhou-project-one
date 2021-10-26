@@ -18,10 +18,37 @@
     justify-content: center;
 }
 
+.flex-end {
+    justify-content: flex-end;
+}
+
 .flex-evenly {
     justify-content: space-evenly;
 }
 //Flex-wrap
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+//min-width: 600px setting -r
+@media (min-width: 600px) {
+    .flex-r {
+        display: flex;
+    }
+
+    .flex-row-r {
+        flex-direction: row;
+    }
+
+    .flex-column-r {
+        flex-direction: column;
+    }
+
+    .align-self-center-r {
+        align-self:center;
+    }
+
+    .align-self-end-r {
+        align-self:flex-end;
+    }
 }

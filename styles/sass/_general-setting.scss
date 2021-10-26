@@ -66,14 +66,14 @@ input[type=email] {
 }
 
 .grey-triangle {
-  border: 5px solid transparent;
-  border-right: 5px solid $color-brown-grey-light;
+  border: 10px solid transparent;
+  border-right: 10px solid $color-brown-grey-light;
   height: 0;
   position:absolute;
   width: 0;
   
   top: 5%;
-  left:-4.5%;
+  left:-6.5%;
 }
 
 //Background color 
@@ -95,4 +95,39 @@ input[type=email] {
 
 .background-green-light {
   background-color: $color-green-light;
+}
+
+@media (min-width: 438px) {
+  .grey-triangle {
+    top: 5%;
+    left:-5.5%;
+  }
+}
+
+@media (min-width: 504px) {
+  .grey-triangle {
+    top: 5%;
+    left:-4%;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 671px) {
+  .grey-triangle {
+    top: 5%;
+    left:-3%;
+  }
 }

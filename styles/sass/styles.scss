@@ -186,3 +186,43 @@
 }
 //Client feedback section END
 //HOME PAGE END
+
+@media (min-width: 600px) {
+    .background-brown-grey-light.flex-wrap { //The recipe section in home-main
+        & > div {
+            margin: 0 2% 3vh 2%;
+            width: 46%;
+        }
+    }
+
+    .gallery-bar a {
+        margin: 0 1vw;
+    
+        li {
+            i {
+                font-size: 200%;
+            }
+    
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .fa-quote-left,
+    .fa-quote-right,
+    .fa-angle-left,
+    .fa-angle-right {
+        font-size: 200%;
+    }
+
+    .home-feedback .flex.flex-column {
+        .fa-quote-right {
+            left: 97%;
+        }
+    }
+
+    .home-feedback .flex.flex-between {
+        width: 20%;
+    }
+}

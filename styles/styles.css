@@ -268,6 +268,12 @@ html {
           justify-content: center;
 }
 
+.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .flex-evenly {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -277,6 +283,35 @@ html {
 .flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+  .flex-r {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flex-row-r {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .flex-column-r {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .align-self-center-r {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .align-self-end-r {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 body {
@@ -346,13 +381,13 @@ input[type=email] {
 }
 
 .grey-triangle {
-  border: 5px solid transparent;
-  border-right: 5px solid #f2f2f2;
+  border: 10px solid transparent;
+  border-right: 10px solid #f2f2f2;
   height: 0;
   position: absolute;
   width: 0;
   top: 5%;
-  left: -4.5%;
+  left: -6.5%;
 }
 
 .background-black {
@@ -373,6 +408,39 @@ input[type=email] {
 
 .background-green-light {
   background-color: #DDED9A;
+}
+
+@media (min-width: 438px) {
+  .grey-triangle {
+    top: 5%;
+    left: -5.5%;
+  }
+}
+
+@media (min-width: 504px) {
+  .grey-triangle {
+    top: 5%;
+    left: -4%;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 671px) {
+  .grey-triangle {
+    top: 5%;
+    left: -3%;
+  }
 }
 
 .skip-link {
@@ -396,6 +464,12 @@ header .header-wrapper .header-toolbar {
   width: 40%;
 }
 
+.header-toolbar,
+.header-shoppingbag,
+.header-searchbar {
+  margin-left: 15%;
+}
+
 .header-toolbar button,
 .header-shoppingbag button,
 .header-searchbar button {
@@ -409,8 +483,9 @@ nav {
 }
 
 nav:hover ul,
-nav button:focus-within + ul {
+nav button:focus + ul {
   display: block;
+  z-index: 1;
 }
 
 nav ul {
@@ -422,7 +497,7 @@ nav ul {
   position: absolute;
   width: 600%;
   top: 30%;
-  left: -10%;
+  left: -30%;
 }
 
 nav ul li {
@@ -470,6 +545,7 @@ nav li:hover::before, nav li:focus-within::before {
 .header-shoppingbag:hover .header-shoppingbag-cart,
 .header-shoppingbag button:focus-within + .header-shoppingbag-cart {
   display: block;
+  z-index: 1;
 }
 
 .header-shoppingbag .header-shoppingbag-cart {
@@ -481,7 +557,7 @@ nav li:hover::before, nav li:focus-within::before {
   position: absolute;
   width: 1400%;
   top: 70%;
-  left: -1000%;
+  left: -1050%;
 }
 
 .header-shoppingbag .header-shoppingbag-cart div {
@@ -525,6 +601,7 @@ nav li:hover::before, nav li:focus-within::before {
 .header-searchbar:hover form,
 .header-searchbar button:focus-within + form {
   display: block;
+  z-index: 1;
 }
 
 .header-searchbar form {
@@ -537,7 +614,7 @@ nav li:hover::before, nav li:focus-within::before {
   position: absolute;
   width: 1100%;
   top: 70%;
-  left: -900%;
+  left: -950%;
 }
 
 .header-searchbar form legend {
@@ -556,6 +633,13 @@ nav li:hover::before, nav li:focus-within::before {
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
+}
+
+@media (min-width: 600px) {
+  .header-shoppingbag > p {
+    top: 15%;
+    left: 60%;
+  }
 }
 
 .subscription-section .flex.flex-evenly {
@@ -602,6 +686,16 @@ nav li:hover::before, nav li:focus-within::before {
   margin-right: 8%;
   margin-top: 5%;
   padding-bottom: 5%;
+}
+
+@media (min-width: 600px) {
+  .subscription-info {
+    margin: 0 5%;
+    width: 40%;
+  }
+  .subscription-section .flex.flex-evenly .subscription-info div:last-of-type {
+    margin-bottom: 2vh;
+  }
 }
 
 .footer-wrapper {
@@ -743,7 +837,26 @@ nav li:hover::before, nav li:focus-within::before {
   color: #F6F6F6;
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
+  margin: 0 auto;
   padding: 3.85% 0;
+  width: 50%;
+}
+
+@media (min-width: 600px) {
+  .article-comment {
+    margin-bottom: 5vh;
+  }
+  .article-comment img {
+    height: 100%;
+    margin-right: 2%;
+    width: 28%;
+  }
+  .article-comment div {
+    width: 70%;
+  }
+  .article-related .flex-r.flex-column-r > div {
+    width: 50%;
+  }
 }
 
 .contact-header {
@@ -759,7 +872,10 @@ nav li:hover::before, nav li:focus-within::before {
 }
 
 .contact-content .contact-comment button {
-  width: 100%;
+  background-color: white;
+  color: #64A604;
+  cursor: pointer;
+  text-align: left;
 }
 
 .contact-content .contact-comment input[type=text],
@@ -787,11 +903,12 @@ nav li:hover::before, nav li:focus-within::before {
 }
 
 .contact-content .aside-content {
+  border: 1px solid #333;
   display: none;
   padding: 1vh 3vw;
   position: absolute;
   width: 100vw;
-  top: -59vh;
+  top: -60vh;
   left: 0;
 }
 
@@ -833,6 +950,27 @@ nav li:hover::before, nav li:focus-within::before {
   background-position: center;
   background-size: cover;
   height: 20vh;
+}
+
+@media (min-width: 400px) {
+  .contact-content .aside-button {
+    top: 0;
+    left: 65vw;
+  }
+}
+
+@media (min-width: 450px) {
+  .contact-content .aside-button {
+    top: 0;
+    left: 70vw;
+  }
+}
+
+@media (min-width: 550px) {
+  .contact-content .aside-button {
+    top: 0;
+    left: 75vw;
+  }
 }
 
 .uc-header {
@@ -1048,4 +1186,32 @@ nav li:hover::before, nav li:focus-within::before {
 
 .home-feedback .flex.flex-between .fa-angle-right {
   color: #F6F6F6;
+}
+
+@media (min-width: 600px) {
+  .background-brown-grey-light.flex-wrap > div {
+    margin: 0 2% 3vh 2%;
+    width: 46%;
+  }
+  .gallery-bar a {
+    margin: 0 1vw;
+  }
+  .gallery-bar a li i {
+    font-size: 200%;
+  }
+  .gallery-bar a li p {
+    font-size: 0.8rem;
+  }
+  .fa-quote-left,
+  .fa-quote-right,
+  .fa-angle-left,
+  .fa-angle-right {
+    font-size: 200%;
+  }
+  .home-feedback .flex.flex-column .fa-quote-right {
+    left: 97%;
+  }
+  .home-feedback .flex.flex-between {
+    width: 20%;
+  }
 }
