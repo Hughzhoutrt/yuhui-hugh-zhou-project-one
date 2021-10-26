@@ -431,8 +431,11 @@ input[type=email] {
   h2 {
     font-size: 1.3rem;
   }
-  h3 {
+  h3, h4 {
     font-size: 1.1rem;
+  }
+  h5 {
+    font-size: 1rem;
   }
 }
 
@@ -440,6 +443,31 @@ input[type=email] {
   .grey-triangle {
     top: 5%;
     left: -3%;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h3, h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  p,
+  input[type=email] {
+    color: #999;
+    font-family: "Lora", serif;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
@@ -635,10 +663,44 @@ nav li:hover::before, nav li:focus-within::before {
   font-size: 1.2rem;
 }
 
+.header-searchbar a {
+  color: #2E2E2E;
+}
+
 @media (min-width: 600px) {
   .header-shoppingbag > p {
     top: 15%;
     left: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-toolbar i {
+    font-size: 150%;
+  }
+  nav ul {
+    width: 500%;
+    top: 25%;
+  }
+  nav li a {
+    font-size: 1rem;
+  }
+  .header-shoppingbag > p {
+    font-size: 0.7rem;
+    padding: 0 5px;
+    top: 15%;
+  }
+  .header-shoppingbag-cart p {
+    font-size: 1rem;
+  }
+  .header-shoppingbag-cart p span {
+    font-size: 0.8rem;
+  }
+  .header-searchbar form {
+    font-size: 1rem;
+  }
+  .header-searchbar form button {
+    font-size: 1.5rem;
   }
 }
 
@@ -648,11 +710,13 @@ nav li:hover::before, nav li:focus-within::before {
   width: 80%;
 }
 
-.subscription-section .flex.flex-evenly .subscription-info div {
+.subscription-section .flex.flex-evenly .subscription-info-one div,
+.subscription-section .flex.flex-evenly .subscription-info-two div {
   border-bottom: 1px solid #999;
 }
 
-.subscription-section .flex.flex-evenly .subscription-info div:last-of-type {
+.subscription-section .flex.flex-evenly .subscription-info-one div:last-of-type,
+.subscription-section .flex.flex-evenly .subscription-info-two div:last-of-type {
   border: none;
   margin-bottom: 5vh;
 }
@@ -689,9 +753,15 @@ nav li:hover::before, nav li:focus-within::before {
 }
 
 @media (min-width: 600px) {
-  .subscription-info {
-    margin: 0 5%;
-    width: 40%;
+  .subscription-info-one,
+  .subscription-info-two {
+    width: 45%;
+  }
+  .subscription-info-one {
+    margin: 0 5% 0 0;
+  }
+  .subscription-info-two {
+    margin: 0 0 0 5%;
   }
   .subscription-section .flex.flex-evenly .subscription-info div:last-of-type {
     margin-bottom: 2vh;
@@ -859,6 +929,21 @@ nav li:hover::before, nav li:focus-within::before {
   }
 }
 
+@media (min-width: 768px) {
+  .comment-form h3 {
+    text-align: center;
+  }
+  .comment-form input[type=text],
+  .comment-form input[type=email],
+  .comment-form textarea {
+    font-size: 1rem;
+  }
+  .comment-form button {
+    font-size: 1rem;
+    width: 40%;
+  }
+}
+
 .contact-header {
   background-image: url(../images/contact-1.jpeg);
 }
@@ -970,6 +1055,28 @@ nav li:hover::before, nav li:focus-within::before {
   .contact-content .aside-button {
     top: 0;
     left: 75vw;
+  }
+}
+
+@media (min-width: 700px) {
+  .contact-content .aside-button {
+    top: 0;
+    left: 80vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-content .aside-button {
+    left: 75vw;
+  }
+  .contact-content .aside-button span {
+    font-size: 1rem;
+  }
+  .aside-button-back {
+    left: 85vw;
+  }
+  .aside-button-back span {
+    font-size: 1rem;
   }
 }
 

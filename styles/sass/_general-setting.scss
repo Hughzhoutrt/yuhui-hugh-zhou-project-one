@@ -120,8 +120,12 @@ input[type=email] {
     font-size: 1.3rem;
   }
 
-  h3 {
+  h3, h4 {
     font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
   }
 }
 
@@ -129,5 +133,35 @@ input[type=email] {
   .grey-triangle {
     top: 5%;
     left:-3%;
+  }
+}
+
+@media (min-width: 768px){
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h3, h4 {
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  p,
+  input[type=email] {
+    color: $color-brown-grey;
+    font-family:  $font-lora;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }

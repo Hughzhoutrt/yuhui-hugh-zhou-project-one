@@ -157,6 +157,23 @@
             width: 50%;
         }
     }
+}
 
+@media(min-width: 768px) {
+    .comment-form {
+        h3 {
+            text-align: center;
+        }
     
+        input[type=text],
+        input[type=email],
+        textarea {
+            font-size: 1rem;
+        }
+    
+        button {
+            font-size: 1rem;
+            width: 40%;
+        }
+    }
 }

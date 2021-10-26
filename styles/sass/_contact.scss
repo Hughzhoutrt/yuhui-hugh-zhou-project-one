@@ -119,3 +119,32 @@
         }
     }
 }
+
+@media (min-width: 700px) {
+    .contact-content {
+        .aside-button {
+            top:0;
+            left:80vw;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        .aside-button {
+            left:75vw;
+    
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .aside-button-back {
+        left:85vw;
+    
+        span {
+            font-size: 1rem;
+        }
+    }
+}

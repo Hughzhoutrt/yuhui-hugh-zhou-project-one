@@ -83,7 +83,6 @@ nav li {
         }
     }
 }
-
 // Nav END and Shopping START
 .header-shoppingbag {
     position:relative;
@@ -199,6 +198,13 @@ nav li {
     }
 }
 
+.header-searchbar {
+    a {
+        color: $color-black;
+    }
+}
+//Searching END
+
 @media(min-width: 600px){
     .header-shoppingbag {
         > p {
@@ -206,4 +212,57 @@ nav li {
             left:60%;
         }
     }
+}
+
+@media(min-width: 768px) {
+    .header-toolbar {
+        i {
+            font-size: 150%;
+        }
+    }
+    // Header END and Nav START
+    nav {
+        ul {
+            width: 500%;
+    
+            top:25%;
+        }
+    }
+    
+    nav li {
+        a {
+            font-size: 1rem;
+        }
+    }
+    // Nav END and Shopping START
+    .header-shoppingbag {
+       
+        > p {
+            font-size: 0.7rem;
+            padding: 0 5px;
+    
+            top: 15%;
+        }
+    }
+    
+    .header-shoppingbag-cart {
+        p {
+            font-size: 1rem;
+    
+            span {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    // Shopping END and Searching START
+    .header-searchbar {
+        form {
+            font-size: 1rem;
+
+            button {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    //Searching END
 }
