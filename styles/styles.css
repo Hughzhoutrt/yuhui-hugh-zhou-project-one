@@ -664,9 +664,9 @@ header .header-wrapper .header-toolbar {
   display: none;
   padding: 50% 0;
   position: absolute;
-  width: 1400%;
+  width: 1600%;
   top: 70%;
-  left: -1050%;
+  left: -1250%;
 }
 
 .header-shoppingbag .header-shoppingbag-cart div {
