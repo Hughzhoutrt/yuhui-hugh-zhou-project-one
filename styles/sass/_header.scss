@@ -47,8 +47,8 @@ header {
     
     ul {
         background-color: $color-green-light;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
         display: none;
         padding: 40% 0;
         position:absolute;
@@ -116,8 +116,8 @@ header {
 
     .header-shoppingbag-cart {
         background-color: $color-green-light;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
         display: none;
         padding: 50% 0;
         position:absolute;
@@ -175,8 +175,8 @@ header {
 
     form {
         background-color: $color-green-light;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
         display: none;
         font-size: 0.8rem;
         padding: 50% 50%;
@@ -195,6 +195,9 @@ header {
             font-family:  $font-lora;
             font-style: italic;
             text-align: center;
+            width:60%;
+
+            transition: width 0.4s ease-in-out;
         }
 
         button {
@@ -204,6 +207,10 @@ header {
             font-size: 1.2rem;
         }
     }
+}
+
+.header-searchbar input[type=search]:focus {
+    width: 80%;
 }
 
 .header-searchbar {
@@ -391,12 +398,16 @@ header {
             input[type=search] {
                 padding-left: 5%;
                 text-align: left;
-                width: 70%;
+                width: 55%;
             }
 
             button {
                 font-size: 2rem;
             }
+        }
+
+        .header-searchbar input[type=search] {
+            width: 100%;
         }
     }
     //Searching END
