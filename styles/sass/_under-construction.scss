@@ -1,15 +1,15 @@
 .uc-header {
-    background-image:url(../images/home-4.jpeg);
+    background-image:url(../images/construction-1.jpg);
     background-position: center;
     background-size: cover;
-    height: 20vh;
+    height: 30vh;
 }
 
 .uc-main {
     flex-grow: 1;
 
     h1, h2 {
-        margin-top: 5vh;
+        margin-top: 4vh;
         text-align: center;
     }
 
@@ -42,5 +42,23 @@
         span {
             color: $color-green-dark;
         }
+    }
+}
+
+@media(min-width: 600px) {
+    .uc-header {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .uc-body {
+        margin: 0 auto;
+        max-width: 1024px;
+    }
+
+    .uc-header {
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }

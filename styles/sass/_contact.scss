@@ -272,6 +272,7 @@
         }
     }
 
+    .contact-content h2,
     .comment-form {
         position:relative;
 
@@ -282,5 +283,16 @@
         position:relative;
 
         right:5%;
+    }
+
+    .aside-content h2 {
+        left: 0;
+    }
+}
+
+@media(min-width: 1440px) {
+    .contact-body{
+        margin: 0 auto;
+        max-width: 1440px;
     }
 }

@@ -1139,6 +1139,9 @@ header .header-wrapper .header-toolbar {
   .article-comment-more span {
     display: inline;
   }
+  .article-tag a {
+    margin: 2% 4% 4%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1159,6 +1162,9 @@ header .header-wrapper .header-toolbar {
   }
   .article-related h3 {
     font-size: 1rem;
+  }
+  .article-tag a {
+    margin: 2% 3% 4%;
   }
 }
 
@@ -1219,6 +1225,9 @@ header .header-wrapper .header-toolbar {
     padding: 3.85% 0;
     width: 35%;
   }
+  .article-tag a {
+    margin: 2% 2% 4%;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1245,6 +1254,22 @@ header .header-wrapper .header-toolbar {
   }
   .article-comment p {
     line-height: 2;
+  }
+  .blog-article .comment-form {
+    left: 0;
+  }
+  .article-tag a {
+    margin: 1.5% 2% 4%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .blog-body {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .blog-article {
+    width: 70%;
   }
 }
 
@@ -1476,6 +1501,7 @@ header .header-wrapper .header-toolbar {
   .contact-comment .comment-form textarea {
     padding-left: 5%;
   }
+  .contact-content h2,
   .comment-form {
     position: relative;
     left: 5%;
@@ -1484,13 +1510,23 @@ header .header-wrapper .header-toolbar {
     position: relative;
     right: 5%;
   }
+  .aside-content h2 {
+    left: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-body {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 }
 
 .uc-header {
-  background-image: url(../images/home-4.jpeg);
+  background-image: url(../images/construction-1.jpg);
   background-position: center;
   background-size: cover;
-  height: 20vh;
+  height: 30vh;
 }
 
 .uc-main {
@@ -1500,7 +1536,7 @@ header .header-wrapper .header-toolbar {
 }
 
 .uc-main h1, .uc-main h2 {
-  margin-top: 5vh;
+  margin-top: 4vh;
   text-align: center;
 }
 
@@ -1533,6 +1569,23 @@ header .header-wrapper .header-toolbar {
 
 .footer-wrapper p span {
   color: #64A604;
+}
+
+@media (min-width: 600px) {
+  .uc-header {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .uc-body {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+  .uc-header {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .home-header {
@@ -1818,5 +1871,36 @@ header .header-wrapper .header-toolbar {
   .home-restuarant {
     margin: 5vh auto;
     width: 80%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home-main .flex.flex-wrap {
+    padding: 3% 2% 2%;
+  }
+  .home-main .flex.flex-wrap h3 {
+    font-size: 1.1rem;
+  }
+  .home-main .flex.flex-wrap p {
+    font-size: 0.9rem;
+  }
+  .home-main .flex.flex-wrap i {
+    font-size: 1.1rem;
+  }
+  .home-restuarant {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-body {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .home-restuarant {
+    width: 60%;
+  }
+  .home-main .flex.flex-wrap {
+    padding: 5% 2% 2%;
   }
 }

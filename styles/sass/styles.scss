@@ -351,5 +351,42 @@
         margin: 5vh auto;
         width: 80%;
     }
-    //Restuarant information section START
+    //Restuarant information section END
+}
+
+@media(min-width:1280px) {
+    .home-main .flex.flex-wrap {
+        padding: 3% 2% 2%;
+
+        h3 {
+            font-size: 1.1rem;
+        }
+
+        p{
+            font-size: 0.9rem;
+        }
+
+        i {
+            font-size: 1.1rem;
+        }
+    }
+
+    .home-restuarant {
+        width: 70%;
+    }
+}
+
+@media(min-width: 1440px) {
+    .home-body{
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
+    .home-restuarant {
+        width: 60%;
+    }
+
+    .home-main .flex.flex-wrap {
+        padding: 5% 2% 2%;
+    }
 }
