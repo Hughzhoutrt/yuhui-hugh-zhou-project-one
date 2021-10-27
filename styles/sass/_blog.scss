@@ -157,6 +157,12 @@
             width: 50%;
         }
     }
+
+    .article-comment-more {
+        span {
+            display: inline;
+        }
+    }
 }
 
 @media(min-width: 768px) {
@@ -256,5 +262,39 @@
             padding: 3.85% 0;
             width: 35%;
         }
+    }
+}
+
+@media(min-width: 1280px) {
+    .blog-article {
+        width: 80%;
+    }
+    .comment-form {
+        input[type=text]:nth-of-type(1),
+        input[type=email],
+        input[type=text] {
+            width: 32%;
+        }
+
+        input[type=text]:nth-of-type(1) {
+            margin-right:0;
+        }
+
+        input[type=email] {
+            margin:0 2% 1vh;
+        }
+
+        textarea {
+            height: 20vh;
+        }
+    
+        button {
+            padding: 2.8% 0;
+            width: 25%;
+        }
+    }
+
+    .article-comment p {
+        line-height: 2;
     }
 }

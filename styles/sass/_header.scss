@@ -71,6 +71,10 @@ header {
         font-family: $font-raleway;
         font-size: 0.8rem;
         text-decoration: none;
+
+        span {
+            color:$color-green-dark;
+        }
     }
 
     &:hover,
@@ -337,64 +341,63 @@ header {
             font-family: $font-raleway;
             font-size: 1rem;
             text-decoration: none;
+
+            span {
+                color:$color-green-dark;
+            }
         }
     }
-    // Nav END and Shopping START
-    // .header-shoppingbag {
-    //     position:relative;
+    //Nav END and Shopping START
+    .header-shoppingbag {
+        position:relative;
         
-    //     > p {
-    //         top: 18%;
-    //     }
+        > p {
+            top: 10%;
+        }
     
-    //     .header-shoppingbag-cart {
-    //         background-color: $color-green-light;
-    //         border-bottom-left-radius: 20px;
-    //         border-top-right-radius: 20px;
-    //         display: none;
-    //         padding: 50% 0;
-    //         position:absolute;
-    //         width: 1500%;
+        .header-shoppingbag-cart {
+            width: 2500%;
     
-    //         top:70%;
-    //         left:-1050%;
+            left:-2100%;
+        }
+    }
     
-    //         div {
-    //             padding: 1% 3%;
+    .header-shoppingbag-cart {
+        img {
+            width: 50%;
+        }
     
-    //             &:hover,
-    //             &:focus-within {
-    //                 background-color: $color-brown-grey;
+        p {
+            font-size: 1rem;
     
-    //                 img {
-    //                     border-color: $color-white;
-    //                 }
-    
-    //                 p {
-    //                     color: $color-white;
-    //                 }
-    //             }
-    //         } 
-    //     }
-    // }
-    
-    // .header-shoppingbag-cart {
-    //     img {
-    //         border-style: double;
-    //         border-radius: 5px;
-    //         margin-bottom: 10%;
-    //         width: 40%;
-    //     }
-    
-    //     p {
-    //         align-self: flex-end;
-    //         font-size: 0.8rem;
-    //         text-decoration: none;
-    
-    //         span {
-    //             font-size: 0.6rem;
-    //         }
-    //     }
-    // }
-    // // Shopping END and Searching START
+            span {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    // Shopping END and Searching START
+    .header-searchbar {
+        form {
+            font-size: 1rem;
+            padding: 50% 150%;
+            width: 2000%;
+
+            left:-1900%;
+
+            legend {
+                font-size: 1rem;
+            }
+
+            input[type=search] {
+                padding-left: 5%;
+                text-align: left;
+                width: 70%;
+            }
+
+            button {
+                font-size: 2rem;
+            }
+        }
+    }
+    //Searching END
 }

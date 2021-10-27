@@ -249,3 +249,38 @@
        }
     }
 }
+
+@media (min-width: 1280px) {
+    .contact-comment .comment-form {
+        input[type=text],
+        input[type=email] {
+            width: 49%;
+        }
+
+        input[type=email] {
+            margin-right: 0;
+        }
+ 
+        & > input[type=text] {
+            width: 100%;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea {
+            padding-left: 5%;
+        }
+    }
+
+    .comment-form {
+        position:relative;
+
+        left: 5%;
+    }
+
+    .aside-content > div {
+        position:relative;
+
+        right:5%;
+    }
+}

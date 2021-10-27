@@ -532,6 +532,18 @@ input[type=email] {
   }
 }
 
+@media (min-width: 1087px) {
+  .grey-triangle {
+    left: -3%;
+  }
+}
+
+@media (min-width: 1258px) {
+  .grey-triangle {
+    left: -2.5%;
+  }
+}
+
 .skip-link {
   color: #2E2E2E;
   font-family: "Raleway", sans-serif;
@@ -604,6 +616,10 @@ header .header-wrapper .header-toolbar {
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
   text-decoration: none;
+}
+
+.navigation-origin li a span {
+  color: #64A604;
 }
 
 .navigation-origin li:hover, .navigation-origin li:focus-within {
@@ -828,6 +844,45 @@ header .header-wrapper .header-toolbar {
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
     text-decoration: none;
+  }
+  .navigation-alt li a span {
+    color: #64A604;
+  }
+  .header-shoppingbag {
+    position: relative;
+  }
+  .header-shoppingbag > p {
+    top: 10%;
+  }
+  .header-shoppingbag .header-shoppingbag-cart {
+    width: 2500%;
+    left: -2100%;
+  }
+  .header-shoppingbag-cart img {
+    width: 50%;
+  }
+  .header-shoppingbag-cart p {
+    font-size: 1rem;
+  }
+  .header-shoppingbag-cart p span {
+    font-size: 0.8rem;
+  }
+  .header-searchbar form {
+    font-size: 1rem;
+    padding: 50% 150%;
+    width: 2000%;
+    left: -1900%;
+  }
+  .header-searchbar form legend {
+    font-size: 1rem;
+  }
+  .header-searchbar form input[type=search] {
+    padding-left: 5%;
+    text-align: left;
+    width: 70%;
+  }
+  .header-searchbar form button {
+    font-size: 2rem;
   }
 }
 
@@ -1081,6 +1136,9 @@ header .header-wrapper .header-toolbar {
   .article-related .flex-r.flex-column-r > div {
     width: 50%;
   }
+  .article-comment-more span {
+    display: inline;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1160,6 +1218,33 @@ header .header-wrapper .header-toolbar {
     margin: 0;
     padding: 3.85% 0;
     width: 35%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .blog-article {
+    width: 80%;
+  }
+  .comment-form input[type=text]:nth-of-type(1),
+  .comment-form input[type=email],
+  .comment-form input[type=text] {
+    width: 32%;
+  }
+  .comment-form input[type=text]:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .comment-form input[type=email] {
+    margin: 0 2% 1vh;
+  }
+  .comment-form textarea {
+    height: 20vh;
+  }
+  .comment-form button {
+    padding: 2.8% 0;
+    width: 25%;
+  }
+  .article-comment p {
+    line-height: 2;
   }
 }
 
@@ -1372,6 +1457,32 @@ header .header-wrapper .header-toolbar {
   }
   .contact-comment .comment-form button {
     width: 45%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact-comment .comment-form input[type=text],
+  .contact-comment .comment-form input[type=email] {
+    width: 49%;
+  }
+  .contact-comment .comment-form input[type=email] {
+    margin-right: 0;
+  }
+  .contact-comment .comment-form > input[type=text] {
+    width: 100%;
+  }
+  .contact-comment .comment-form input[type=text],
+  .contact-comment .comment-form input[type=email],
+  .contact-comment .comment-form textarea {
+    padding-left: 5%;
+  }
+  .comment-form {
+    position: relative;
+    left: 5%;
+  }
+  .aside-content > div {
+    position: relative;
+    right: 5%;
   }
 }
 
