@@ -1,6 +1,6 @@
 # Delicious-bootcamp-in-Juno  
   
-## Juno web dev bootcamp cohort#37  
+## Juno web dev bootcamp cohort#37 project 1  
   
 Please feel free to check here: https://hughzhoutrt.github.io/Delicious-bootcamp-in-Juno/  
 <p align="center">and https://delicious-by-yuhui.netlify.app</p>  
