@@ -1,4 +1,4 @@
-# Delicious-bootcamp-in-Juno  
+# Delicious-bootcamp-in-Juno🍽  
   
 ## Juno web dev bootcamp cohort#37 project 1  
   
