@@ -2,7 +2,7 @@
   
 ## Juno web dev bootcamp cohort#37  
   
-Please feel free to check here: https://hughzhoutrt.github.io/Delicious-bootcamp-in-Juno/ and https://delicious-by-yuhui.netlify.app  
+Links are here: https://hughzhoutrt.github.io/Delicious-bootcamp-in-Juno/ and https://delicious-by-yuhui.netlify.app  
     
 <p align="center"><img src="https://user-images.githubusercontent.com/84819219/139278621-025e6885-0a70-4d80-a71e-43189b79d847.png" alt="Desktop version of Delicious website."></P>  
 <p align="center">Desktop version</p>
