@@ -31,19 +31,8 @@ header {
     }
 }
 // Header END and Nav START
-.navigation-alt {
-    display:none;
-}
-
-.navigation-origin {
+.navigation {
     position:relative;
-
-    &:hover ul,
-    button:focus + ul  {
-        display:block;
-        z-index: 1;
-    }
-
     
     ul {
         background-color: $color-green-light;
@@ -65,7 +54,7 @@ header {
     }
 }
 
-.navigation-origin li {
+.navigation li {
     a {
         color: $color-black;
         font-family: $font-raleway;
@@ -74,20 +63,6 @@ header {
 
         span {
             color:$color-green-dark;
-        }
-    }
-
-    &:hover,
-    &:focus-within {
-        background-color: $color-brown-grey;
-        
-        a {
-            color: $color-white;
-            }
-        
-        &::before {
-            color: $color-white;
-            content: '»';
         }
     }
 }
@@ -108,12 +83,6 @@ header {
         left:60%;
     }
 
-    &:hover .header-shoppingbag-cart,
-    button:focus-within + .header-shoppingbag-cart {
-        display:block;
-        z-index: 1;
-    }
-
     .header-shoppingbag-cart {
         background-color: $color-green-light;
         border-bottom-left-radius: 10px;
@@ -131,61 +100,6 @@ header {
 .header-shoppingbag-cart div {
     padding: 1% 3%;
     position:relative;
-
-    &:hover,
-    &:focus-within {
-        background-color: $color-brown-grey;
-
-        img {
-            border-color: $color-white;
-        }
-
-        p {
-            color: $color-white;
-        }
-    }
-
-    &::before, 
-    &::after {
-        box-sizing: inherit;
-        position: absolute;
-        content: '';
-        border: 5px solid transparent;
-        width: 0;
-        height: 0;
-    }
-    
-    &::after {
-        bottom: 0;
-        right: 0;
-    }
-    
-    &::before {
-        top: 0;
-        left: 0;
-    }
-
-    &:hover::before,
-    &:focus-within::before, 
-    &:hover::after,
-    &:focus-within::after {
-        width: 100%;
-        height: 100%;
-    }
-      
-    &:hover::before,
-    &:focus-within::before {
-        border-top-color: $color-green-dark;
-        border-right-color: $color-green-dark;
-        transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
-    }
-      
-    &:hover::after,
-    &:focus-within::after {
-        border-bottom-color: $color-green-dark;
-        border-left-color: $color-green-dark;
-        transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
-    }
 } 
 
 .header-shoppingbag-cart {
@@ -209,12 +123,6 @@ header {
 // Shopping END and Searching START
 .header-searchbar {
     position:relative;
-
-    &:hover form,
-    button:focus-within + form {
-        display:block;
-        z-index: 1;
-    }
 
     form {
         background-color: $color-green-light;
@@ -252,10 +160,6 @@ header {
     }
 }
 
-.header-searchbar input[type=search]:focus {
-    width: 80%;
-}
-
 .header-searchbar {
     a {
         color: $color-black;
@@ -282,7 +186,7 @@ header {
         }
     }
     // Header END and Nav START
-    .navigation-origin {
+    .navigation {
         ul {
             width: 500%;
     
@@ -290,7 +194,7 @@ header {
         }
     }
     
-    .navigation-origin li {
+    .navigation li {
         a {
             font-size: 1rem;
         }
@@ -358,11 +262,7 @@ header {
         }
     }
     // Header END and Nav START
-    .navigation-origin {
-        display:none;
-    }
-
-    .navigation-alt {
+    .navigation {
         display:flex;
         flex-direction: row;
 
@@ -389,7 +289,7 @@ header {
         }
     }
 
-    .navigation-alt li {
+    .navigation li {
         a {
             color: $color-black;
             font-family: $font-raleway;
