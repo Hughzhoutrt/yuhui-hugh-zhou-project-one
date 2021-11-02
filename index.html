@@ -23,10 +23,10 @@
         <div class="flex flex-row flex-between header-wrapper">
             <h1>DELICIOUS</h1>
             <div class="flex flex-row flex-end header-toolbar">
-                <nav class="navigation dropdown-menu">
+                <nav class="navigation dropdown-menu" id="navigation-menu">
                     <button><i class="fas fa-caret-square-down"
                         aria-label="Button for navigation menu."></i></button>
-                    <ul class="dropdown-box">
+                    <ul class="dropdown-box" id="navigation-box">
                         <li><a href="./index.html" tabindex="0"><span>HOME</span></a></li>
                         <li><a href="./index.html#about" tabindex="0">ABOUT</a>
                         </li>
@@ -41,11 +41,11 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header-shoppingbag dropdown-menu">
+                <div class="header-shoppingbag dropdown-menu" id="shopping-menu">
                     <p>2</p>
                     <button><i class="fas fa-shopping-bag"
                         aria-label="Button for shopping bag."></i></button>
-                    <div class="header-shoppingbag-cart dropdown-box">
+                    <div class="header-shoppingbag-cart dropdown-box" id="shopping-box">
                         <div class="flex flex-row flex-between" tabindex="0">
                             <img src="./images/home-6.jpeg" alt="You already put a chicken hamburger into your shopping bag.">
                             <p>Chicken Hamburger <span>x</span> 1</p>
@@ -56,9 +56,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-searchbar dropdown-menu">
+                <div class="header-searchbar dropdown-menu" id="searching-menu">
                     <button><i class="fas fa-search" aria-label="Button for search bar."></i></button>
-                    <form class="dropdown-box"> 
+                    <form class="dropdown-box" id="searching-box"> 
                         <legend>Search your favorite taste here!</legend>
                         <div class="flex flex-row flex-between">
                             <input type="search" id="searchInputValue" name="searchInputValue"
