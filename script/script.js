@@ -23,7 +23,14 @@ app.utils.dropdownToggle('#searching-menu', '#searching-box', app.props.dropdown
 app.utils.dropdownToggle('#searching-menu', '#searching-box', app.props.dropdownOffEvents, 'none');
 
 //Navigation menu hover effect
-document.querySelector('#navigation-box li').addEventListener('mouseover', function() {
-    document.querySelector('#navigation-box li a').style.color = 'red';
-    console.log(this);
-});
+document.querySelectorAll('#navigation-box li').forEach(function(effect) {
+    effect.addEventListener('mouseover', function() {
+        this.style.backgroundColor = '#999'; //$color-brown-grey
+        this.children[0].style.color = '#F6F6F6'; //$color-white
+    });
+    effect.addEventListener('mouseleave', function() {
+        this.style.backgroundColor = '#DDED9A'; //$color-green-light
+        this.children[0].style.color = '#2E2E2E'; //$color-black
+    });
+})
+
