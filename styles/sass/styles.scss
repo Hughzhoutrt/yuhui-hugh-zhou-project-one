@@ -95,29 +95,6 @@
 .home-gallery {
     margin: 5vh auto;
     position:relative;
-
-    .gallery-bar {
-        padding-left: 0; 
-    }   
-}
-
-.gallery-bar a {
-    margin: 0 3vw;
-    text-decoration: none;
-    width: 16.67%;
-
-    li {
-        color: $color-black-light;
-        list-style: none;
-        text-align: center;
-
-        p{
-            color: $color-black-light;
-            font-size: 0.5rem;
-            margin-top: 0;
-            text-align: center;
-        }
-    }
 }
 
 .gallery-content {
@@ -196,19 +173,6 @@
         }
     }
 
-    .gallery-bar a {
-        margin: 0 1vw;
-    
-        li {
-            i {
-                font-size: 200%;
-            }
-    
-            p{
-                font-size: 0.8rem;
-            }
-        }
-    }
 
     .fa-quote-left,
     .fa-quote-right,
@@ -302,11 +266,7 @@
     //Restuarant gallery section START
     .home-gallery {
         margin: 5vh auto 0;
-        position:static;
-
-        .gallery-bar {
-            display: none; 
-        }   
+        position:static; 
     }
 
     .gallery-content {

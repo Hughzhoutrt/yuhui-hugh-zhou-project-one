@@ -1,7 +1,11 @@
 const app = {
     props: {
         dropdownOnEvents: ['click', 'focusin', 'mouseenter'],
-        dropdownOffEvents: ['focusout', 'mouseleave']
+        dropdownOffEvents: ['focusout', 'mouseleave'],
+
+        imgs: ['#galleryPic1', '#galleryPic2', '#galleryPic3', '#galleryPic4','#galleryPic5', '#galleryPic6'],
+        imgNo: 0,
+        zNo: 1
     },
     utils: {
         dropdownToggle: function (menu, box, dropdownEvents, condition) {
@@ -33,4 +37,23 @@ document.querySelectorAll('#navigation-box li').forEach(function(effect) {
         this.children[0].style.color = '#2E2E2E'; //$color-black
     });
 })
+
+//Gallery automatically displays
+function autoPlayGallery (gallery) {
+        app.props.imgNo ++;
+        console.log(app.props.imgNo);
+        if ( app.props.imgNo >= gallery.length) {
+            app.props.imgNo = 0;
+            console.log(`reset`);
+        }
+        document.querySelector(gallery[app.props.imgNo]).style.zIndex= app.props.zNo;
+        document.querySelector(gallery[app.props.imgNo]).style.display = 'block';
+        console.log(gallery[app.props.imgNo]);
+
+        app.props.zNo ++;
+        console.log(app.props.zNo);
+    
+}
+setInterval('autoPlayGallery(app.props.imgs)', 3000);
+
 
