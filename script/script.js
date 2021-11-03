@@ -5,6 +5,7 @@ const app = {
 
         imgs: ['#galleryPic1', '#galleryPic2', '#galleryPic3', '#galleryPic4','#galleryPic5', '#galleryPic6'],
         imgNo: 0,
+        galleryContent: '.gallery-content'
     },
     utils: {
         dropdownToggle: function (menu, box, dropdownEvents, condition) {
@@ -17,16 +18,21 @@ const app = {
             };
         },
 
-        autoPlayGallery: function (gallery) {
-            if (app.props.imgNo === gallery.length || app.props.imgNo === 0) {
+        slicePlay: function (obj) {
+            if (app.props.imgNo === obj.length || app.props.imgNo === 0) {
                 app.props.imgNo = 0;
-                document.querySelector(gallery[app.props.imgNo + 5]).style.zIndex= "0"; // The 6th pic is hidden
+                document.querySelector(obj[obj.length - 1]).style.zIndex= "0"; // The 6th pic is hidden
             } else {
-                document.querySelector(gallery[app.props.imgNo - 1]).style.zIndex= "0"; //Former pic is hidden
+                document.querySelector(obj[app.props.imgNo - 1]).style.zIndex= "0"; //Former pic is hidden
             }
-            document.querySelector(gallery[app.props.imgNo]).style.zIndex= "1"; // Pic shows
-            document.querySelector(gallery[app.props.imgNo]).style.display = 'block';
+            document.querySelector(obj[app.props.imgNo]).style.zIndex= "1"; // Pic shows
+            document.querySelector(obj[app.props.imgNo]).style.display = 'block';
             app.props.imgNo ++ ;
+        },
+
+        loopDisplay: function  (contents) {
+            const loopContent = document.querySelector(contents)
+            loopContent.appendChild(loopContent.firstElementChild);
         }
     }
 }
@@ -52,6 +58,27 @@ document.querySelectorAll('#navigation-box li').forEach(function(effect) {
         });
     };
 })
+//Shopping menu hover effect
+document.querySelectorAll('#shopping-box > div').forEach(function(effect) {
+    effect.addEventListener('mouseover', function() {
+        this.style.backgroundColor = '#999'; //$color-brown-grey
+        this.children[0].style.width = '45%';
+        this.children[0].style.color = '#F6F6F6';//$color-green-dark
+        this.children[1].style.color = '#F6F6F6'; //$color-white
+    });
+    effect.addEventListener('mouseleave', function() {
+        this.style.backgroundColor = '#DDED9A'; //$color-green-light
+        this.children[0].style.width = '40%';
+        this.children[0].style.color = '#2E2E2E'; //$color-black
+        this.children[1].style.color = '#2E2E2E'; //$color-black
+    });
+})
 
-//Gallery automatically displays
-setInterval('app.utils.autoPlayGallery(app.props.imgs)', 3000);
+
+
+//Gallery automatically displays < 1280px width
+setInterval('app.utils.slicePlay(app.props.imgs)', 3000);
+
+
+//Gallery automatically displays >= 1280px width
+setInterval('app.utils.loopDisplay(app.props.galleryContent)', 3000);
