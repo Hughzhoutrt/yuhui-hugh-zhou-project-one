@@ -48,7 +48,8 @@
         width: 90%;
     }
 
-    button {
+    a {
+        align-self: center;
         background-color: $color-green-dark;
         border-style: none;
         color: $color-white;
@@ -57,6 +58,8 @@
         font-size: 0.9rem;
         margin: 3vh 0 10vh;
         padding: 4% 10%;
+        text-decoration: none;
+        width: 70%;
     }
 
     img {
@@ -195,6 +198,12 @@
     .home-feedback .flex.flex-between {
         width: 20%;
     }
+
+    .main-description {
+        a{
+            width: 50%;
+        }
+    }
 }
 
 @media (min-width: 666px) {
@@ -253,9 +262,10 @@
             width: 50%;
         }
     
-        button {
+        a {
             font-size: 1rem;
             margin: 1vh 0 0;
+            width: 45%;
         }
     
         img {

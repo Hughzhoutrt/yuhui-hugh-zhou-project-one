@@ -1584,7 +1584,10 @@ header .header-wrapper .header-toolbar {
   width: 90%;
 }
 
-.main-description button {
+.main-description a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   background-color: #64A604;
   border-style: none;
   color: #F6F6F6;
@@ -1593,6 +1596,8 @@ header .header-wrapper .header-toolbar {
   font-size: 0.9rem;
   margin: 3vh 0 10vh;
   padding: 4% 10%;
+  text-decoration: none;
+  width: 70%;
 }
 
 .main-description img {
@@ -1713,6 +1718,9 @@ header .header-wrapper .header-toolbar {
   .home-feedback .flex.flex-between {
     width: 20%;
   }
+  .main-description a {
+    width: 50%;
+  }
 }
 
 @media (min-width: 666px) {
@@ -1759,9 +1767,10 @@ header .header-wrapper .header-toolbar {
     padding: 0 5%;
     width: 50%;
   }
-  .main-description button {
+  .main-description a {
     font-size: 1rem;
     margin: 1vh 0 0;
+    width: 45%;
   }
   .main-description img {
     height: 100%;
