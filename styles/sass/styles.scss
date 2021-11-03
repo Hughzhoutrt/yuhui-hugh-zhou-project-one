@@ -93,17 +93,16 @@
 }
 //Restuarant information section End and Restuarant gallery section START
 .home-gallery {
-    margin: 5vh auto;
+    background-color: $color-green-light;
+    height: 40vh;
+    margin: 0 auto;
+    padding: 5vh 0;
     position:relative;
+    
 }
 
 .gallery-content {
-    & img:nth-of-type(1) {
-        display: block;
-        width: 100%;
-    }
-
-    & img:nth-of-type(1) ~ img {
+    img {
         display:none;
         position:absolute;
         width: 100%;
@@ -119,7 +118,7 @@
 }  
 //Restuarant gallery section End and Client feedback section START
 .home-feedback {
-    margin: 5vh auto 0;
+    margin: 0 auto;
     padding: 5vh 0;
 
     .flex.flex-center {
@@ -165,6 +164,12 @@
 //Client feedback section END
 //HOME PAGE END
 
+@media (min-width: 515px) {
+    .home-gallery {
+        height: 45vh;
+    }
+}
+
 @media (min-width: 600px) {
     .background-brown-grey-light.flex-wrap { //The recipe section in home-main
         & > div {
@@ -189,6 +194,24 @@
 
     .home-feedback .flex.flex-between {
         width: 20%;
+    }
+}
+
+@media (min-width: 666px) {
+    .home-gallery {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 902px) {
+    .home-gallery {
+        height: 55vh;
+    }
+}
+
+@media (min-width: 984px) {
+    .home-gallery {
+        height: 60vh;
     }
 }
 
@@ -267,15 +290,11 @@
     .home-gallery {
         margin: 5vh auto 0;
         position:static; 
+        height: 100%;
     }
 
     .gallery-content {
-        & img:nth-of-type(1) {
-            display: block;
-            width: 33.33%;
-        }
-
-        & img:nth-of-type(1) ~ img {
+        img {
             display:block;
             position:static;
             width: 33.33%;
@@ -329,6 +348,10 @@
         i {
             font-size: 1.1rem;
         }
+    }
+
+    .navigation {
+        margin-top: -2%;
     }
 
     .home-restuarant {
