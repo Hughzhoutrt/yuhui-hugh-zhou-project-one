@@ -18,7 +18,7 @@ const app = {
             };
         },
 
-        slicePlay: function (obj) {
+        sliceDisplay: function (obj) {
             if (app.props.imgNo === obj.length || app.props.imgNo === 0) {
                 app.props.imgNo = 0;
                 document.querySelector(obj[obj.length - 1]).style.zIndex= "0"; // The 6th pic is hidden
@@ -77,7 +77,7 @@ document.querySelectorAll('#shopping-box > div').forEach(function(effect) {
 
 
 //Gallery automatically displays < 1280px width
-setInterval('app.utils.slicePlay(app.props.imgs)', 3000);
+setInterval('app.utils.sliceDisplay(app.props.imgs)', 3000);
 
 
 //Gallery automatically displays >= 1280px width
