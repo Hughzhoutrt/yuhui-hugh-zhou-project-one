@@ -590,6 +590,7 @@ header .header-wrapper .header-toolbar {
   padding: 40% 0;
   position: absolute;
   width: 600%;
+  z-index: 1;
   top: 30%;
   left: -30%;
 }
@@ -635,6 +636,7 @@ header .header-wrapper .header-toolbar {
   padding: 50% 0;
   position: absolute;
   width: 1600%;
+  z-index: 1;
   top: 70%;
   left: -1250%;
 }
@@ -675,6 +677,7 @@ header .header-wrapper .header-toolbar {
   padding: 50% 50%;
   position: absolute;
   width: 1100%;
+  z-index: 1;
   top: 70%;
   left: -950%;
 }
@@ -1639,6 +1642,18 @@ header .header-wrapper .header-toolbar {
   position: relative;
 }
 
+.home-gallery button {
+  background-color: rgba(242, 242, 242, 0.8);
+  color: rgba(46, 46, 46, 0.9);
+  position: absolute;
+  width: 60px;
+  z-index: 2;
+}
+
+.home-gallery button p {
+  margin: 0;
+}
+
 .gallery-content img {
   display: none;
   position: absolute;
@@ -1650,6 +1665,21 @@ header .header-wrapper .header-toolbar {
 .gallery-content img:target {
   display: block;
   z-index: 1;
+}
+
+.previous-button {
+  top: 15vh;
+  left: 0;
+}
+
+.next-button {
+  top: 15vh;
+  right: 0;
+}
+
+.pause-button {
+  top: 0;
+  left: calc(50% - 30px);
 }
 
 .home-feedback {
@@ -1726,6 +1756,16 @@ header .header-wrapper .header-toolbar {
 @media (min-width: 666px) {
   .home-gallery {
     height: 50vh;
+  }
+  .home-gallery button {
+    width: 100px;
+  }
+  .previous-button,
+  .next-button {
+    top: 25vh;
+  }
+  .pause-button {
+    left: calc(50% - 50px);
   }
 }
 

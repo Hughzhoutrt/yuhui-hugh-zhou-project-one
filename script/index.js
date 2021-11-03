@@ -58,6 +58,7 @@ document.querySelectorAll('#navigation-box li').forEach(function(effect) {
         });
     };
 })
+
 //Shopping menu hover effect
 document.querySelectorAll('#shopping-box > div').forEach(function(effect) {
     effect.addEventListener('mouseover', function() {
