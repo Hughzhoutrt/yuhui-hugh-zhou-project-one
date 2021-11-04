@@ -23,10 +23,10 @@
         <div class="flex flex-row flex-between header-wrapper">
             <h1>DELICIOUS</h1>
             <div class="flex flex-row flex-end header-toolbar">
-                <nav class="navigation-origin">
+                <nav class="navigation dropdown-menu" id="navigation-menu">
                     <button><i class="fas fa-caret-square-down"
                         aria-label="Button for navigation menu."></i></button>
-                    <ul>
+                    <ul class="dropdown-box" id="navigation-box">
                         <li><a href="./index.html" tabindex="0"><span>HOME</span></a></li>
                         <li><a href="./index.html#about" tabindex="0">ABOUT</a>
                         </li>
@@ -41,27 +41,11 @@
                         </li>
                     </ul>
                 </nav>
-                <nav class="navigation-alt">
-                    <ul class="flex-rrr flex-row-rrr">
-                        <li><a href="./index.html" tabindex="0"><span>HOME</span></a></li>
-                        <li><a href="./index.html#about" tabindex="0">ABOUT</a>
-                        </li>
-                        <li><a href="./under-construction.html" tabindex="0">RECIPES</a>
-                        </li>
-                        <li><a href="./under-construction.html" tabindex="0">NUTRITION</a>
-                        </li>
-                        <li><a href="./blog.html" tabindex="0">BLOG</a></li>
-                        <li><a href="./under-construction.html" tabindex="0">SHOP</a>
-                        </li>
-                        <li><a href="./contact.html" tabindex="0">CONTACT</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-shoppingbag">
+                <div class="header-shoppingbag dropdown-menu" id="shopping-menu">
                     <p>2</p>
                     <button><i class="fas fa-shopping-bag"
                         aria-label="Button for shopping bag."></i></button>
-                    <div class="header-shoppingbag-cart">
+                    <div class="header-shoppingbag-cart dropdown-box" id="shopping-box">
                         <div class="flex flex-row flex-between" tabindex="0">
                             <img src="./images/home-6.jpeg" alt="You already put a chicken hamburger into your shopping bag.">
                             <p>Chicken Hamburger <span>x</span> 1</p>
@@ -72,18 +56,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-searchbar">
+                <div class="header-searchbar dropdown-menu" id="searching-menu">
                     <button><i class="fas fa-search" aria-label="Button for search bar."></i></button>
-                    <form> 
+                    <form class="dropdown-box" id="searching-box"> 
                         <legend>Search your favorite taste here!</legend>
                         <div class="flex flex-row flex-between">
+                            <label class="sr-only" for="searchInputValue">Enter the recipe you are looking for</label>
                             <input type="search" id="searchInputValue" name="searchInputValue"
                                 placeholder="Kung Pao Chicken">
 
-                            <button type="submit"
-                                aria-label="Button for submmitting keywords in search bar."><a
-                                    href="./under-construction.html"><i class="fab fa-searchengin"
-                                        aria-hidden="true"></i></a></button>
+                            <button id="searching-submitting-button" type="submit"
+                                aria-label="Button for submmitting keywords in search bar."><i class="fab fa-searchengin"
+                                        aria-hidden="true"></i></button>
                         </div>
                     </form>
                 </div>
@@ -263,11 +247,11 @@
                     <h5>SUBSCRIBE NOW</h5>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
                     <form action="#" method="POST" name="subscriptionSending" class="flex flex-row">
-                        <label class="sr-only" for="emailSubsriptionSending">Enter your email</label>
+                        <label class="sr-only" for="emailSubsription">Enter your email</label>
                         <input type="email" id="emailSubsription" placeholder="Enter your email"
                             class="background-brown-grey-dark">
 
-                        <button type="submit" aria-label="Button for submitting email subscription."><i
+                        <button id='subscription-submitting-button' type="submit" aria-label="Button for submitting email subscription."><i
                                 class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></button>
                     </form>
                     <div>
@@ -287,6 +271,8 @@
             <p>Copyright © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="./script/blog.js"></script>
 </body>
 
 </html>

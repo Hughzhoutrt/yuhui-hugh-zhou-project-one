@@ -48,7 +48,8 @@
         width: 90%;
     }
 
-    button {
+    a {
+        align-self: center;
         background-color: $color-green-dark;
         border-style: none;
         color: $color-white;
@@ -57,6 +58,8 @@
         font-size: 0.9rem;
         margin: 3vh 0 10vh;
         padding: 4% 10%;
+        text-decoration: none;
+        width: 70%;
     }
 
     img {
@@ -93,40 +96,36 @@
 }
 //Restuarant information section End and Restuarant gallery section START
 .home-gallery {
-    margin: 5vh auto;
+    background-color: $color-green-light;
+    height: 40vh;
+    margin: 0 auto;
+    padding: 5vh 0;
     position:relative;
 
-    .gallery-bar {
-        padding-left: 0; 
-    }   
-}
+    button {
+        background-color: rgba(242,242,242,0.8);
+        color:rgba(46,46,46,0.9);
+        cursor: pointer;
+        position:absolute;
+        width: 60px;
+        z-index: 2;
 
-.gallery-bar a {
-    margin: 0 3vw;
-    text-decoration: none;
-    width: 16.67%;
-
-    li {
-        color: $color-black-light;
-        list-style: none;
-        text-align: center;
-
-        p{
-            color: $color-black-light;
-            font-size: 0.5rem;
-            margin-top: 0;
-            text-align: center;
+        p {
+            margin:0;
         }
     }
+
+    .close-button {
+        display:none;
+        width: 25px;
+
+        top:-5vh;
+        right: calc(50% - 12.5px);
+    } 
 }
 
 .gallery-content {
-    & img:nth-of-type(1) {
-        display: block;
-        width: 100%;
-    }
-
-    & img:nth-of-type(1) ~ img {
+    img {
         display:none;
         position:absolute;
         width: 100%;
@@ -139,10 +138,28 @@
             z-index: 1;
         }
     }
-}  
+} 
+
+.previous-button {
+    top: 15vh;
+    left:0;
+}
+
+.next-button {
+    top: 15vh;
+    right:0;
+}
+
+.pause-button {
+    top: 0;
+    right: calc(50% - 30px);
+}
+
+
+
 //Restuarant gallery section End and Client feedback section START
 .home-feedback {
-    margin: 5vh auto 0;
+    margin: 0 auto;
     padding: 5vh 0;
 
     .flex.flex-center {
@@ -188,6 +205,12 @@
 //Client feedback section END
 //HOME PAGE END
 
+@media (min-width: 515px) {
+    .home-gallery {
+        height: 45vh;
+    }
+}
+
 @media (min-width: 600px) {
     .background-brown-grey-light.flex-wrap { //The recipe section in home-main
         & > div {
@@ -196,19 +219,6 @@
         }
     }
 
-    .gallery-bar a {
-        margin: 0 1vw;
-    
-        li {
-            i {
-                font-size: 200%;
-            }
-    
-            p{
-                font-size: 0.8rem;
-            }
-        }
-    }
 
     .fa-quote-left,
     .fa-quote-right,
@@ -225,6 +235,49 @@
 
     .home-feedback .flex.flex-between {
         width: 20%;
+    }
+
+    .main-description {
+        a{
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 666px) {
+    .home-gallery {
+        height: 50vh;
+    }
+
+    .home-gallery button {
+            width: 100px; 
+    }
+
+    .previous-button,
+    .next-button {
+        top: 25vh;
+    }
+    
+    .pause-button {
+        right: calc(50% - 50px);
+    }
+
+    .close-button {
+        width: 10px;
+    }
+}
+
+
+
+@media (min-width: 902px) {
+    .home-gallery {
+        height: 55vh;
+    }
+}
+
+@media (min-width: 984px) {
+    .home-gallery {
+        height: 60vh;
     }
 }
 
@@ -266,14 +319,25 @@
             width: 50%;
         }
     
-        button {
+        a {
             font-size: 1rem;
             margin: 1vh 0 0;
+            width: 45%;
         }
     
         img {
             height: 100%;
         }
+    }
+
+    .previous-button,
+    .next-button {
+       display: none;
+    }
+
+    .pause-button {
+        top: -50px;
+        right:0;
     }
 
     .home-main .flex.flex-wrap {
@@ -302,20 +366,18 @@
     //Restuarant gallery section START
     .home-gallery {
         margin: 5vh auto 0;
-        position:static;
+        padding-top: 0;
+        position:relative; 
+        height: 100%;
 
-        .gallery-bar {
-            display: none; 
-        }   
+        .close-button {
+            top: -3vh;
+            right: 120px;
+        } 
     }
 
     .gallery-content {
-        & img:nth-of-type(1) {
-            display: block;
-            width: 33.33%;
-        }
-
-        & img:nth-of-type(1) ~ img {
+        img {
             display:block;
             position:static;
             width: 33.33%;
@@ -371,8 +433,16 @@
         }
     }
 
+    .navigation {
+        margin-top: -2%;
+    }
+
     .home-restuarant {
         width: 70%;
+    }
+
+    .home-gallery {
+        padding: 0;
     }
 }
 
