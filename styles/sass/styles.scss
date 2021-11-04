@@ -114,7 +114,14 @@
             margin:0;
         }
     }
-    
+
+    .close-button {
+        display:none;
+        width: 25px;
+
+        top:-5vh;
+        right: calc(50% - 12.5px);
+    } 
 }
 
 .gallery-content {
@@ -145,8 +152,11 @@
 
 .pause-button {
     top: 0;
-    left: calc(50% - 30px);
+    right: calc(50% - 30px);
 }
+
+
+
 //Restuarant gallery section End and Client feedback section START
 .home-feedback {
     margin: 0 auto;
@@ -249,7 +259,11 @@
     }
     
     .pause-button {
-        left: calc(50% - 50px);
+        right: calc(50% - 50px);
+    }
+
+    .close-button {
+        width: 10px;
     }
 }
 
@@ -323,6 +337,7 @@
 
     .pause-button {
         top: -50px;
+        right:0;
     }
 
     .home-main .flex.flex-wrap {
@@ -354,6 +369,11 @@
         padding-top: 0;
         position:relative; 
         height: 100%;
+
+        .close-button {
+            top: -3vh;
+            right: 120px;
+        } 
     }
 
     .gallery-content {
