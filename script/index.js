@@ -101,7 +101,14 @@ app.init = function () {
     document.querySelector('#searching-submitting-button').addEventListener('click', function (e) {
         e.preventDefault();
         const inputValue = document.querySelector('#searchInputValue').value;
+        if (inputValue.length === 0) {
+            alert(`Please enter your recipe in searching text area!`)
+        } else {
+        const alertValue = `Sorry! You are going to search your recipe via Google!\r\n 
+        Our dear user, our recipe searching function is still in development, please use google and we are going to provide our searching service to you soon!`
+        alert(alertValue);
         window.location.href = `https://www.google.com/search?q=${inputValue}`;
+        }
     });
 
  
