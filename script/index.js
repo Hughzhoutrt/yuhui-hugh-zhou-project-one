@@ -46,7 +46,7 @@ app.utils.loopDisplay = function (contents) {
 
 app.utils.smallGallery = setInterval('app.utils.sliceDisplay(app.props.imgs)', 3000);
 
-app.utils.bigGallery = setInterval('app.utils.loopDisplay(app.props.galleryContent)', 1000);
+app.utils.bigGallery = setInterval('app.utils.loopDisplay(app.props.galleryContent)', 3000);
 
 app.init = function () {
     //Header Dropdown box function
@@ -144,7 +144,7 @@ app.init = function () {
             if (window.innerWidth < 1024) {
                 app.utils.smallGallery = setInterval('app.utils.sliceDisplay(app.props.imgs)', 3000);
             } else {
-                app.utils.bigGallery = setInterval('app.utils.loopDisplay(app.props.galleryContent)', 1000);
+                app.utils.bigGallery = setInterval('app.utils.loopDisplay(app.props.galleryContent)', 3000);
             }
         }
     });
