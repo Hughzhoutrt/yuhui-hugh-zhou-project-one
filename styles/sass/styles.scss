@@ -105,6 +105,7 @@
     button {
         background-color: rgba(242,242,242,0.8);
         color:rgba(46,46,46,0.9);
+        cursor: pointer;
         position:absolute;
         width: 60px;
         z-index: 2;
@@ -313,6 +314,12 @@
         img {
             height: 100%;
         }
+    }
+
+    .previous-button,
+    .next-button,
+    .pause-button {
+       display: none;
     }
 
     .home-main .flex.flex-wrap {
