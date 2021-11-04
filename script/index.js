@@ -60,7 +60,6 @@ app.init = function () {
     app.utils.dropdownToggle('#shopping-menu', '#shopping-box', app.props.dropdownOffEvents, 'none');
     app.utils.dropdownToggle('#searching-menu', '#searching-box', app.props.dropdownOnEvents, 'block');
     app.utils.dropdownToggle('#searching-menu', '#searching-box', app.props.dropdownOffEvents, 'none');
-
     //Navigation menu hover effect
     document.querySelectorAll('#navigation-box li').forEach(function (effect) {
         if (window.innerWidth < 1280) { //Nav dropdown box works until 1280px-width screen
@@ -73,8 +72,7 @@ app.init = function () {
                 this.children[0].style.color = '#2E2E2E'; //$color-black
             });
         };
-    })
-
+    });
     //Shopping menu hover effect
     document.querySelectorAll('#shopping-box > div').forEach(function (effect) {
         effect.addEventListener('mouseover', function () {
@@ -89,7 +87,7 @@ app.init = function () {
             this.children[0].style.color = '#2E2E2E'; //$color-black
             this.children[1].style.color = '#2E2E2E'; //$color-black
         });
-    })
+    });
     //Search bar focus effct 
     document.querySelector('#searching-box input').addEventListener('focusin', function () {
         this.style.width = '80%';
@@ -110,14 +108,10 @@ app.init = function () {
         window.location.href = `https://www.google.com/search?q=${inputValue}`;
         }
     });
-
- 
     //Gallery automatically displays < 1280px width
     app.utils.smallGallery;
-
     //Gallery automatically displays >= 1280px width
     app.utils.bigGallery;
-
     //Gallery controll button functions
     document.querySelector('#gallery-previous-button').addEventListener('click', function () {
         app.props.imgNo--;
@@ -182,6 +176,17 @@ app.init = function () {
     document.querySelector('#gallery-close-button').addEventListener('click', function () {
         document.querySelector('#gallery-pause-button').style.display = 'none';
         document.querySelector('#gallery-close-button').style.display = 'none';
+    });
+
+    //Subsription email
+    document.querySelector('#subscription-submitting-button').addEventListener('click', function (e) {
+        e.preventDefault();
+        const inputValue = document.querySelector('#emailSubsription').value;
+        if (inputValue.length === 0) {
+            alert(`Please enter your email in subscription text area!`)
+        } else {
+       alert(`Thanks for your subscription! We are going to share our new updates with you via ${inputValue}.`)
+        }
     });
 }
 
