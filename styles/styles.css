@@ -1057,6 +1057,12 @@ header .header-wrapper .header-toolbar {
   font-weight: lighter;
 }
 
+.article-comment-more .new-submitted-comment {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .comment-form h3 {
   text-align: center;
 }

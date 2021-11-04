@@ -101,6 +101,7 @@ app.init = function () {
         const innerContainer = document.createElement('div');
         innerContainer.classList.add('background-brown-grey-light');
         innerContainer.classList.add('comment-content');
+        innerContainer.classList.add('new-submitted-comment');
         outerContainer.appendChild(innerContainer);
         //Grey triangle
         const greyTriangle = document.createElement('div');
