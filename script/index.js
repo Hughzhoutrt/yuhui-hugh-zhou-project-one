@@ -97,7 +97,14 @@ app.init = function () {
     document.querySelector('#searching-box input').addEventListener('focusout', function () {
         this.style.width = '60%';
     });
+    //Search bar searching function
+    document.querySelector('#searching-submitting-button').addEventListener('click', function (e) {
+        e.preventDefault();
+        const inputValue = document.querySelector('#searchInputValue').value;
+        window.location.href = `https://www.google.com/search?q=${inputValue}`;
+    });
 
+ 
     //Gallery automatically displays < 1280px width
     app.utils.smallGallery;
 
