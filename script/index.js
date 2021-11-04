@@ -14,12 +14,16 @@ app.props.galleryPause = false;
 
 //App.utils declaire
 app.utils.dropdownToggle = function (menu, box, dropdownEvents, condition) {
+    for (events of dropdownEvents) {
+        document.querySelector(menu).addEventListener(events, function () {
+            document.querySelector(box).style.display = condition;
+        });
+    };
+};
+
+app.utils.dropdownToggleNav = function (menu, box, dropdownEvents, condition) {
     if (window.innerWidth < 1280) { //Nav dropdown box works until 1280px-width screen
-        for (events of dropdownEvents) {
-            document.querySelector(menu).addEventListener(events, function () {
-                document.querySelector(box).style.display = condition;
-            });
-        };
+        app.utils.dropdownToggle(menu, box, dropdownEvents, condition);
     };
 };
 
@@ -50,8 +54,8 @@ app.utils.bigGallery = setInterval('app.utils.loopDisplay(app.props.galleryConte
 
 app.init = function () {
     //Header Dropdown box function
-    app.utils.dropdownToggle('#navigation-menu', '#navigation-box', app.props.dropdownOnEvents, 'block');
-    app.utils.dropdownToggle('#navigation-menu', '#navigation-box', app.props.dropdownOffEvents, 'none');
+    app.utils.dropdownToggleNav('#navigation-menu', '#navigation-box', app.props.dropdownOnEvents, 'block');
+    app.utils.dropdownToggleNav('#navigation-menu', '#navigation-box', app.props.dropdownOffEvents, 'none');
     app.utils.dropdownToggle('#shopping-menu', '#shopping-box', app.props.dropdownOnEvents, 'block');
     app.utils.dropdownToggle('#shopping-menu', '#shopping-box', app.props.dropdownOffEvents, 'none');
     app.utils.dropdownToggle('#searching-menu', '#searching-box', app.props.dropdownOnEvents, 'block');
@@ -86,6 +90,13 @@ app.init = function () {
             this.children[1].style.color = '#2E2E2E'; //$color-black
         });
     })
+    //Search bar focus effct 
+    document.querySelector('#searching-box input').addEventListener('focusin', function () {
+        this.style.width = '80%';
+    });
+    document.querySelector('#searching-box input').addEventListener('focusout', function () {
+        this.style.width = '60%';
+    });
 
     //Gallery automatically displays < 1280px width
     app.utils.smallGallery;
@@ -121,8 +132,6 @@ app.init = function () {
         document.querySelector(app.props.imgs[app.props.imgNo]).style.zIndex = "1"; // Pic shows
         document.querySelector(app.props.imgs[app.props.imgNo]).style.display = 'block';
     });
-
-
 
     document.querySelector('#gallery-pause-button').addEventListener('click', function () {
         app.props.galleryPause = !app.props.galleryPause;
