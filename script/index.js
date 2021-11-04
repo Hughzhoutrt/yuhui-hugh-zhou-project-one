@@ -143,6 +143,8 @@ app.init = function () {
             document.querySelector('#gallery-pause-button p').style.color = 'rgba(246,246,246,0.9)'; //$color-white
             if (window.innerWidth < 1024) {
                 clearInterval(app.utils.smallGallery);
+                document.querySelector('#gallery-previous-button').style.display = 'none';
+                document.querySelector('#gallery-next-button').style.display = 'none';
             } else {
                 clearInterval(app.utils.bigGallery);
             }
@@ -152,6 +154,8 @@ app.init = function () {
             document.querySelector('#gallery-pause-button p').style.color = 'rgba(46,46,46,0.9)'; //$color-white
             if (window.innerWidth < 1024) {
                 app.utils.smallGallery = setInterval('app.utils.sliceDisplay(app.props.imgs)', 3000);
+                document.querySelector('#gallery-previous-button').style.display = 'block';
+                document.querySelector('#gallery-next-button').style.display = 'block';
             } else {
                 app.utils.bigGallery = setInterval('app.utils.loopDisplay(app.props.galleryContent)', 3000);
             }
