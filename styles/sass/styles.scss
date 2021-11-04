@@ -317,9 +317,12 @@
     }
 
     .previous-button,
-    .next-button,
-    .pause-button {
+    .next-button {
        display: none;
+    }
+
+    .pause-button {
+        top: -50px;
     }
 
     .home-main .flex.flex-wrap {
@@ -348,7 +351,8 @@
     //Restuarant gallery section START
     .home-gallery {
         margin: 5vh auto 0;
-        position:static; 
+        padding-top: 0;
+        position:relative; 
         height: 100%;
     }
 

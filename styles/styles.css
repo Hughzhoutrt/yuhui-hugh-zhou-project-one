@@ -1817,9 +1817,11 @@ header .header-wrapper .header-toolbar {
     height: 100%;
   }
   .previous-button,
-  .next-button,
-  .pause-button {
+  .next-button {
     display: none;
+  }
+  .pause-button {
+    top: -50px;
   }
   .home-main .flex.flex-wrap {
     margin: 0 auto;
@@ -1841,7 +1843,8 @@ header .header-wrapper .header-toolbar {
   }
   .home-gallery {
     margin: 5vh auto 0;
-    position: static;
+    padding-top: 0;
+    position: relative;
     height: 100%;
   }
   .gallery-content img {
