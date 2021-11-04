@@ -78,8 +78,57 @@ app.init = function () {
         window.location.href = `https://www.google.com/search?q=${inputValue}`;
         }
     });
-
-
+    //Comment posting
+    document.querySelector('#comment-submitting-button').addEventListener('click', function (e) {
+        e.preventDefault();
+        //Getting value from form
+        const name = document.querySelector('#nameCommentSending').value;
+        const email = document.querySelector('#emailCommentSending').value;
+        const web = document.querySelector('#webCommentSending').value;
+        const text = document.querySelector('#textareaCommentSending').value;
+        //Outest container
+        const outerContainer = document.createElement('div');
+        outerContainer.classList.add('flex');
+        outerContainer.classList.add('flex-row');
+        document.getElementById('commentContainer').appendChild(outerContainer);
+        //Profile adding into outest container
+        const profile = document.createElement('img');
+        profile.src = './images/Chef-06.jpg';
+        profile.alt = 'This is the profile of those who submitted a comment.';
+        profile.style = 'width:70px;height:70px;';
+        outerContainer.appendChild(profile);
+        //Inner container 
+        const innerContainer = document.createElement('div');
+        innerContainer.classList.add('background-brown-grey-light');
+        innerContainer.classList.add('comment-content');
+        outerContainer.appendChild(innerContainer);
+        //Grey triangle
+        const greyTriangle = document.createElement('div');
+        greyTriangle.classList.add('grey-triangle');
+        innerContainer.appendChild(greyTriangle);
+        //Comment tittle
+        const commentTittle = document.createElement('h3');
+        commentTittle.textContent = `${name}`;
+        innerContainer.appendChild(commentTittle);
+        //Comment tittle - suffix
+        const commentTittleSpan = document.createElement('span');
+        commentTittleSpan.textContent = ` - ${email}`;
+        commentTittle.appendChild(commentTittleSpan);
+        //Comment Subtittle 
+        const commentSubtittle = document.createElement('p');
+        commentSubtittle.textContent = `${web}`;
+        innerContainer.appendChild(commentSubtittle);
+        //Comment text content
+        const commentText = document.createElement('p');
+        commentText.textContent = `${text}`;;
+        innerContainer.appendChild(commentText);
+        //Comment time
+        const commentTime = document.createElement('p');
+        const time = new Date();
+        const currentTime = time.getHours().toString().padStart(2, '0') + ':' + time.getMinutes().toString().padStart(2, '0') + ':' + time.getSeconds().toString().padStart(2, '0') + ',' + ' ' + time.getFullYear() + '-' + (time.getMonth() + 1).toString().padStart(2, '0') + '-' + time.getDate().toString().padStart(2, '0');
+        commentTime.textContent = `${currentTime}`;;
+        innerContainer.appendChild(commentTime);
+    });
     //Subsription email
     document.querySelector('#subscription-submitting-button').addEventListener('click', function (e) {
         e.preventDefault();

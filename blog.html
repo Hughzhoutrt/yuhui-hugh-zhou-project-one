@@ -27,14 +27,14 @@
                     <button><i class="fas fa-caret-square-down"
                         aria-label="Button for navigation menu."></i></button>
                     <ul class="dropdown-box" id="navigation-box">
-                        <li><a href="./index.html" tabindex="0"><span>HOME</span></a></li>
+                        <li><a href="./index.html" tabindex="0">HOME</a></li>
                         <li><a href="./index.html#about" tabindex="0">ABOUT</a>
                         </li>
                         <li><a href="./under-construction.html" tabindex="0">RECIPES</a>
                         </li>
                         <li><a href="./under-construction.html" tabindex="0">NUTRITION</a>
                         </li>
-                        <li><a href="./blog.html" tabindex="0">BLOG</a></li>
+                        <li><a href="./blog.html" tabindex="0"><span>BLOG</span></a></li>
                         <li><a href="./under-construction.html" tabindex="0">SHOP</a>
                         </li>
                         <li><a href="./contact.html" tabindex="0">CONTACT</a>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="article-comment-more">
+            <div class="article-comment-more" id="commentContainer">
                 <h3>02 COMMENTS</h3>
                 <div class="flex flex-row">
                     <img src="./images/blog-6.jpeg"
@@ -200,7 +200,7 @@
                 <label class="sr-only" for="textareaCommentSending">Enter your comment</label>
                 <textarea id="textareaCommentSending" placeholder="Comment"></textarea>
 
-                <button type="submit">SUBMIT COMMENT</button>
+                <button id="comment-submitting-button" type="submit">SUBMIT COMMENT</button>
             </form>
         </section>
         <section class="subscription-section background-black-light">
