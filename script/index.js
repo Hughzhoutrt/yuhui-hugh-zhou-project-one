@@ -109,74 +109,9 @@ app.init = function () {
         }
     });
     //Gallery automatically displays < 1280px width
-    app.utils.smallGallery;
+    app.utils.smallGallery();
     //Gallery automatically displays >= 1280px width
-    app.utils.bigGallery;
-    //Gallery controll button functions
-    document.querySelector('#gallery-previous-button').addEventListener('click', function () {
-        app.props.imgNo--;
-        if (app.props.imgNo <= 0) {
-            app.props.imgNo = 6;
-            document.querySelector(app.props.imgs[0]).style.zIndex = "0"; // Pic shows
-            document.querySelector(app.props.imgs[0]).style.display = 'none';
-        } else {
-            document.querySelector(app.props.imgs[app.props.imgNo]).style.zIndex = "0"; // Pic shows
-            document.querySelector(app.props.imgs[app.props.imgNo]).style.display = 'none';
-        }
-        document.querySelector(app.props.imgs[app.props.imgNo - 1]).style.zIndex = "1"; // Pic shows
-        document.querySelector(app.props.imgs[app.props.imgNo - 1]).style.display = 'block';
-    });
-
-    document.querySelector('#gallery-next-button').addEventListener('click', function () {
-        app.props.imgNo++;
-        if (app.props.imgNo >= 6) {
-            app.props.imgNo = 0;
-            document.querySelector(app.props.imgs[app.props.imgs.length - 1]).style.zIndex = "0"; // Pic shows
-            document.querySelector(app.props.imgs[app.props.imgs.length - 1]).style.display = 'none';
-        } else {
-            document.querySelector(app.props.imgs[app.props.imgNo - 2]).style.zIndex = "0"; // Pic shows
-            document.querySelector(app.props.imgs[app.props.imgNo - 2]).style.display = 'none';
-        }
-        document.querySelector(app.props.imgs[app.props.imgNo]).style.zIndex = "1"; // Pic shows
-        document.querySelector(app.props.imgs[app.props.imgNo]).style.display = 'block';
-    });
-
-    document.querySelector('#gallery-pause-button').addEventListener('click', function () {
-        app.props.galleryPause = !app.props.galleryPause;
-        console.log(app.props.galleryPause);
-
-        if (app.props.galleryPause === true) {
-            document.querySelector('#gallery-pause-button').style.backgroundColor = 'rgba(100,166,4,0.8)';//$color-green-dark
-            document.querySelector('#gallery-pause-button i').style.color = 'rgba(246,246,246,0.9)'; //$color-white
-            document.querySelector('#gallery-pause-button p').style.color = 'rgba(246,246,246,0.9)'; //$color-white
-            if (window.innerWidth < 1024) {
-                clearInterval(app.utils.smallGallery);
-                document.querySelector('#gallery-previous-button').style.display = 'none';
-                document.querySelector('#gallery-next-button').style.display = 'none';
-                document.querySelector('#gallery-close-button').style.display = 'block';
-            } else {
-                clearInterval(app.utils.bigGallery);
-                document.querySelector('#gallery-close-button').style.display = 'block';
-            }
-        } else {
-            document.querySelector('#gallery-pause-button').style.backgroundColor = 'rgba(242,242,242,0.8)';//$color-green-dark
-            document.querySelector('#gallery-pause-button i').style.color = 'rgba(46,46,46,0.9)'; //$color-white
-            document.querySelector('#gallery-pause-button p').style.color = 'rgba(46,46,46,0.9)'; //$color-white
-            if (window.innerWidth < 1024) {
-                app.utils.smallGallery = setInterval('app.utils.sliceDisplay(app.props.imgs)', 3000);
-                document.querySelector('#gallery-previous-button').style.display = 'block';
-                document.querySelector('#gallery-next-button').style.display = 'block';
-                document.querySelector('#gallery-close-button').style.display = 'none';
-            } else {
-                app.utils.bigGallery = setInterval('app.utils.loopDisplay(app.props.galleryContent)', 3000);
-                document.querySelector('#gallery-close-button').style.display = 'none';
-            }
-        }
-    });
-    document.querySelector('#gallery-close-button').addEventListener('click', function () {
-        document.querySelector('#gallery-pause-button').style.display = 'none';
-        document.querySelector('#gallery-close-button').style.display = 'none';
-    });
+    app.utils.bigGallery();
 
     //Subsription email
     document.querySelector('#subscription-submitting-button').addEventListener('click', function (e) {
@@ -191,5 +126,3 @@ app.init = function () {
 }
 
 app.init();
-
-
